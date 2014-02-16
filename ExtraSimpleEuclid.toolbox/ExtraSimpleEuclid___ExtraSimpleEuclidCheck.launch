@@ -23,6 +23,11 @@
 <listEntry value="0&lt;&lt;I1, I2, I3&gt;&gt;"/>
 <listEntry value="0&lt;&lt;I2, I3&gt;&gt;"/>
 <listEntry value="1PC"/>
+<listEntry value="1Inv"/>
+<listEntry value="1InductiveInv"/>
+<listEntry value="1I1"/>
+<listEntry value="0I2"/>
+<listEntry value="1I3"/>
 </listAttribute>
 <listAttribute key="modelCorrectnessProperties">
 <listEntry value="0Termination"/>

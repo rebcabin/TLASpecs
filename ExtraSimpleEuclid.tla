@@ -9,11 +9,11 @@ ASSUME {M, N} \subseteq Nat \ {0} \* `subset' doesn't seem to work
 (***************************************************************************
 --fair algorithm Euclid
   {  variables x = M, y = N;
-    { while (x /= y)
+    { loop: while (x /= y)
       \* The Greek word for the following process of repeated subtraction
       \* is `antanaresis.'               
-      { if (x < y) { y := y - x; } 
-        else       { x := x - y; }
+      { antanaresis: if (x < y) { y := y - x; } 
+                     else       { x := x - y; }
       }
   } }
  ***************************************************************************)
@@ -25,20 +25,23 @@ vars == << x, y, pc >>
 Init == (* Global variables *)
         /\ x = M
         /\ y = N
-        /\ pc = "Lbl_1"
+        /\ pc = "loop"
 
-Lbl_1 == /\ pc = "Lbl_1"
-         /\ IF x /= y
-               THEN /\ IF x < y
-                          THEN /\ y' = y - x
-                               /\ x' = x
-                          ELSE /\ x' = x - y
-                               /\ y' = y
-                    /\ pc' = "Lbl_1"
-               ELSE /\ pc' = "Done"
-                    /\ UNCHANGED << x, y >>
+loop == /\ pc = "loop"
+        /\ IF x /= y
+              THEN /\ pc' = "antanaresis"
+              ELSE /\ pc' = "Done"
+        /\ UNCHANGED << x, y >>
 
-Next == Lbl_1
+antanaresis == /\ pc = "antanaresis"
+               /\ IF x < y
+                     THEN /\ y' = y - x
+                          /\ x' = x
+                     ELSE /\ x' = x - y
+                          /\ y' = y
+               /\ pc' = "loop"
+
+Next == loop \/ antanaresis
            \/ (* Disjunct to prevent deadlock on termination *)
               (pc = "Done" /\ UNCHANGED vars)
 
@@ -53,14 +56,22 @@ Termination == <>(pc = "Done")
 
 PC == (pc = "Done") => (x = y) /\ (x = GCD(M, N))
 
-Inv == PC
+TypeOK == /\ x \in Nat \ {0}
+          /\ y \in Nat \ {0}
+
+Inv == /\ TypeOK
+       /\ GCD(x, y) = GCD(M, N) 
+       /\ (pc = "Done") => (x = y)
+       
+InductiveInv == /\ Inv
+                /\ (pc = "antanaresis") => (x /= y)
 
 I1 == Init => Inv
-I2 == Inv /\ Next => Inv'
+I2 == (~Init) /\ Inv /\ Next => Inv'
 I3 == Inv => PC
 
 
 =============================================================================
 \* Modification History
-\* Last modified Sun Feb 16 10:37:47 PST 2014 by bbeckman
+\* Last modified Sun Feb 16 15:42:10 PST 2014 by bbeckman
 \* Created Sun Feb 16 10:15:18 PST 2014 by bbeckman
