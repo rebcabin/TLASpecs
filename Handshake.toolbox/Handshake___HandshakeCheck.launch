@@ -22,7 +22,9 @@
 <listAttribute key="modelCorrectnessInvariants">
 <listEntry value="1Len(box) &lt;= 1"/>
 </listAttribute>
-<listAttribute key="modelCorrectnessProperties"/>
+<listAttribute key="modelCorrectnessProperties">
+<listEntry value="1A!Spec"/>
+</listAttribute>
 <stringAttribute key="modelExpressionEval" value=""/>
 <stringAttribute key="modelParameterActionConstraint" value=""/>
 <listAttribute key="modelParameterConstants"/>

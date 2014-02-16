@@ -55,7 +55,10 @@ Next == Producer \/ Consumer
 Spec == Init /\ [][Next]_vars
 
 \* END TRANSLATION
+
+A == INSTANCE Alternation WITH b <- p (+) c, box <- box
+
 =============================================================================
 \* Modification History
-\* Last modified Sat Feb 15 19:20:48 PST 2014 by rebcabin
+\* Last modified Sat Feb 15 19:52:56 PST 2014 by rebcabin
 \* Created Sat Feb 15 19:18:04 PST 2014 by rebcabin
