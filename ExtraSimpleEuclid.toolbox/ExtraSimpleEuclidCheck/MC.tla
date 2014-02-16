@@ -1,28 +1,28 @@
 ---- MODULE MC ----
-EXTENDS Euclid, TLC
+EXTENDS ExtraSimpleEuclid, TLC
 
 \* CONSTANT definitions @modelParameterConstants:0M
-const_1392574414104161000 == 
+const_1392575978550274000 == 
 30
 ----
 
 \* CONSTANT definitions @modelParameterConstants:1N
-const_1392574414115162000 == 
-5
+const_1392575978561275000 == 
+18
 ----
 
 \* CONSTANT definition @modelParameterDefinitions:0
-def_ov_1392574414125163000 ==
+def_ov_1392575978573276000 ==
 -100..100
 ----
 \* SPECIFICATION definition @modelBehaviorSpec:0
-spec_1392574414136164000 ==
+spec_1392575978583277000 ==
 Spec
 ----
-\* PROPERTY definition @modelCorrectnessProperties:0
-prop_1392574414147165000 ==
-Termination
+\* INVARIANT definition @modelCorrectnessInvariants:0
+inv_1392575978594278000 ==
+PC
 ----
 =============================================================================
 \* Modification History
-\* Created Sun Feb 16 10:13:34 PST 2014 by bbeckman
+\* Created Sun Feb 16 10:39:38 PST 2014 by bbeckman

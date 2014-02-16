@@ -939,36 +939,124 @@
 \begin{document}
 \tlatex
 \setboolean{shading}{true}
-\@x{}\moduleLeftDash\@xx{ {\MODULE} GCD}\moduleRightDash\@xx{}%
-\@x{ {\EXTENDS} Integers}%
+\@x{}\moduleLeftDash\@xx{ {\MODULE} Euclid}\moduleRightDash\@xx{}%
+\@x{ {\EXTENDS} Integers ,\, GCD ,\, TLC}%
 \@pvspace{8.0pt}%
-\@x{ Divides ( p ,\, n ) \.{\defeq}\@s{36.89}}%
-\begin{mcom}{245.28}%
-\begin{cpar}{0}{F}{F}{0}{0}{}%
-For integers \ensuremath{p} and \ensuremath{n}, equals
- \ensuremath{{\TRUE}} iff \ensuremath{p} divides \ensuremath{n} -- which
- I think is really neat; don\mbox{'}t
- you\.{?}
-\end{cpar}%
-\end{mcom}%
-\@x{\@s{24.59} \E\, q \.{\in} Int \.{:}\@s{41.99}}%
-\@x{\@s{49.60} n \.{=} q \.{*} p\@s{24.71}}%
-\multivspace{3}%
+\@x{ {\CONSTANTS} M ,\, N}%
 \@pvspace{8.0pt}%
- \@x{ DivisorsOf ( n ) \.{\defeq} \{ p \.{\in} Int \.{:} Divides ( p ,\, n )
- \}}%
-\@pvspace{8.0pt}%
-\@x{ SetMax ( S ) \.{\defeq}\@s{123.0}}%
+\@x{ {\ASSUME} \{ M ,\, N \} \.{\subseteq} Nat \.{\,\backslash\,} \{ 0 \}}%
 \@y{\@s{0}%
- \ensuremath{{\CHOOSE}} produces elements rather than sets.
+ \ensuremath{subset} doesn\mbox{'}t seem to work
 }%
 \@xx{}%
- \@x{\@s{16.4} {\CHOOSE} i \.{\in} S \.{:} \A\, j \.{\in} S \.{:} i \.{\geq}
- j}%
 \@pvspace{8.0pt}%
-\@x{ GCD ( m ,\, n ) \.{\defeq}}%
-\@x{\@s{27.27} SetMax ( DivisorsOf ( m ) \.{\cap} DivisorsOf ( n ) )}%
+\begin{lcom}{5.0}%
+\begin{cpar}{0}{F}{F}{0}{0}{}%
+**************************************************************************
+\end{cpar}%
+\end{lcom}%
+\pcalsymbolstrue
+\pcalshadingtrue
+\csyntaxtrue
+\@x{ {\p@mmfair} {\p@algorithm} Euclid}%
+ \@x{\@s{8.2} {\p@lbrace}\@s{4.1} {\p@variables} x \.{\in} 1 \.{\dotdot} N ,\,
+ y \.{\in} 1 \.{\dotdot} N ,\, x0 \.{=} x ,\, y0 \.{=} y {\p@semicolon}}%
+ \@x{\@s{16.4} {\p@lbrace} while\_step\@s{.5}\textrm{:}\@s{3} {\p@while}
+ {\p@lparen} x \.{\neq} y {\p@rparen}}%
+\@x{\@s{25.98}}%
+\@y{\@s{0}%
+ The \ensuremath{Greek} word for the following process of repeated subtraction
+}%
+\@xx{}%
+\@x{\@s{25.98}}%
+\@y{\@s{0}%
+ is \ensuremath{antanaresis .
+}}%
+\@xx{}%
+\@x{\@s{25.98} {\p@lbrace} {\p@if} {\p@lparen} x \.{<} y {\p@rparen}}%
+ \@x{\@s{35.56} {\p@lbrace} antanaresis\_x\@s{.5}\textrm{:}\@s{3} y \.{:=} y
+ \.{-} x {\p@semicolon} {\p@rbrace}}%
+\@x{\@s{35.56} {\p@else}}%
+ \@x{\@s{35.56} {\p@lbrace} antanaresis\_y\@s{.5}\textrm{:}\@s{3} x \.{:=} x
+ \.{-} y {\p@semicolon} {\p@rbrace}}%
+\@x{\@s{25.98} {\p@rbrace} {\p@semicolon}}%
+ \@x{\@s{25.98} {\p@assert} ( x \.{=} y ) \.{\land} ( x \.{=} GCD ( x0 ,\, y0
+ ) ) {\p@semicolon}}%
+\@x{\@s{8.2} {\p@rbrace} {\p@rbrace}}%
+\@y{}%
+\@xx{}%
+\pcalshadingfalse \pcalsymbolsfalse
+\begin{lcom}{7.5}%
+\begin{cpar}{0}{F}{F}{0}{0}{}%
+**************************************************************************
+\end{cpar}%
+\end{lcom}%
+\@x{}%
+\@y{\@s{0}%
+ BEGIN TRANSLATION
+}%
+\@xx{}%
+\@x{ {\VARIABLES} x ,\, y ,\, x0 ,\, y0 ,\, pc}%
 \@pvspace{8.0pt}%
+\@x{ vars \.{\defeq} {\langle} x ,\, y ,\, x0 ,\, y0 ,\, pc {\rangle}}%
+\@pvspace{8.0pt}%
+\@x{ Init\@s{2.02} \.{\defeq}}%
+\@y{\@s{0}%
+ Global variables
+}%
+\@xx{}%
+\@x{\@s{37.72} \.{\land} x \.{\in} 1 \.{\dotdot} N}%
+\@x{\@s{37.72} \.{\land} y\@s{0.10} \.{\in} 1 \.{\dotdot} N}%
+\@x{\@s{37.72} \.{\land} x0 \.{=} x}%
+\@x{\@s{37.72} \.{\land} y0\@s{0.10} \.{=} y}%
+\@x{\@s{37.72} \.{\land} pc\@s{1.07} \.{=}\@w{while\_step}}%
+\@pvspace{8.0pt}%
+\@x{ while\_step \.{\defeq} \.{\land} pc \.{=}\@w{while\_step}}%
+\@x{\@s{63.87} \.{\land} {\IF} x \.{\neq} y}%
+\@x{\@s{87.13} \.{\THEN} \.{\land} {\IF} x \.{<} y}%
+\@x{\@s{141.71} \.{\THEN} \.{\land} pc \.{'} \.{=}\@w{antanaresis\_x}}%
+\@x{\@s{141.71} \.{\ELSE} \.{\land} pc \.{'} \.{=}\@w{antanaresis\_y}}%
+ \@x{\@s{87.13} \.{\ELSE} \.{\land} Assert ( ( x \.{=} y ) \.{\land} ( x \.{=}
+ GCD ( x0 ,\, y0 ) ) ,\,}%
+\@x{\@s{162.14}\@w{Failure\ of\ assertion\ at\ line\ 19,\ column\ 7.} )}%
+\@x{\@s{118.44} \.{\land} pc \.{'} \.{=}\@w{Done}}%
+ \@x{\@s{63.87} \.{\land} {\UNCHANGED} {\langle} x ,\, y ,\, x0 ,\, y0
+ {\rangle}}%
+\@pvspace{8.0pt}%
+\@x{ antanaresis\_x \.{\defeq} \.{\land} pc \.{=}\@w{antanaresis\_x}}%
+\@x{\@s{79.50} \.{\land} y \.{'}\@s{1.21} \.{=} y \.{-} x}%
+\@x{\@s{79.50} \.{\land} pc \.{'} \.{=}\@w{while\_step}}%
+\@x{\@s{79.50} \.{\land} {\UNCHANGED} {\langle} x ,\, x0 ,\, y0 {\rangle}}%
+\@pvspace{8.0pt}%
+ \@x{ antanaresis\_y\@s{0.10} \.{\defeq} \.{\land} pc
+ \.{=}\@w{antanaresis\_y}}%
+\@x{\@s{79.50} \.{\land} x \.{'}\@s{1.11} \.{=} x \.{-} y}%
+\@x{\@s{79.50} \.{\land} pc \.{'} \.{=}\@w{while\_step}}%
+\@x{\@s{79.50} \.{\land} {\UNCHANGED} {\langle} y ,\, x0 ,\, y0 {\rangle}}%
+\@pvspace{8.0pt}%
+ \@x{ Next \.{\defeq} while\_step \.{\lor} antanaresis\_x \.{\lor}
+ antanaresis\_y}%
+\@x{\@s{52.13} \.{\lor}}%
+\@y{\@s{0}%
+ Disjunct to prevent deadlock on termination
+}%
+\@xx{}%
+\@x{\@s{63.24} ( pc \.{=}\@w{Done} \.{\land} {\UNCHANGED} vars )}%
+\@pvspace{8.0pt}%
+ \@x{ Spec\@s{1.46} \.{\defeq} \.{\land} Init \.{\land} {\Box} [ Next ]_{
+ vars}}%
+\@x{\@s{39.83} \.{\land} {\WF}_{ vars} ( Next )}%
+\@pvspace{8.0pt}%
+\@x{ Termination \.{\defeq} {\Diamond} ( pc \.{=}\@w{Done} )}%
+\@pvspace{8.0pt}%
+\@x{}%
+\@y{\@s{0}%
+ END TRANSLATION
+}%
+\@xx{}%
+\@pvspace{8.0pt}%
+ \@x{ PartialCorrectness \.{\defeq} ( pc \.{=}\@w{Done} ) \.{\implies} ( x
+ \.{=} y ) \.{\land} ( x \.{=} GCD ( x0 ,\, y0 ) )}%
 \@x{}\bottombar\@xx{}%
 \setboolean{shading}{false}
 \begin{lcom}{0}%
@@ -977,12 +1065,12 @@ For integers \ensuremath{p} and \ensuremath{n}, equals
 \end{cpar}%
 \begin{cpar}{0}{F}{F}{0}{0}{}%
  \ensuremath{\.{\,\backslash\,}\.{*}} Last modified Sun \ensuremath{Feb} 16
- 09:44:33 \ensuremath{PST} 2014 by \ensuremath{bbeckman
+ 10:12:36 \ensuremath{PST} 2014 by \ensuremath{bbeckman
 }%
 \end{cpar}%
 \begin{cpar}{0}{F}{F}{0}{0}{}%
  \ensuremath{\.{\,\backslash\,}\.{*}} Created \ensuremath{Fri}
- \ensuremath{Feb} 14 11:26:38 \ensuremath{PST} 2014 by \ensuremath{bbeckman
+ \ensuremath{Feb} 14 15:53:12 \ensuremath{PST} 2014 by \ensuremath{bbeckman
 }%
 \end{cpar}%
 \end{lcom}%
