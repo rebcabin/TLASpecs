@@ -8,14 +8,14 @@ Running in Model-Checking mode.
 Starting SANY...
 @!@!@ENDMSG 2220 @!@!@
 Parsing file MC.tla
-Parsing file DieHard.tla
+Parsing file PDieHard.tla
 Parsing file /Users/bbeckman/Documents/toolbox/plugins/org.lamport.tlatools_1.0.0.201304250137/tla2sany/StandardModules/TLC.tla
 Parsing file /Users/bbeckman/Documents/toolbox/plugins/org.lamport.tlatools_1.0.0.201304250137/tla2sany/StandardModules/Integers.tla
 Parsing file /Users/bbeckman/Documents/toolbox/plugins/org.lamport.tlatools_1.0.0.201304250137/tla2sany/StandardModules/Naturals.tla
 Parsing file /Users/bbeckman/Documents/toolbox/plugins/org.lamport.tlatools_1.0.0.201304250137/tla2sany/StandardModules/Sequences.tla
 Semantic processing of module Naturals
 Semantic processing of module Integers
-Semantic processing of module DieHard
+Semantic processing of module PDieHard
 Semantic processing of module Sequences
 Semantic processing of module TLC
 Semantic processing of module MC
@@ -23,7 +23,7 @@ Semantic processing of module MC
 SANY finished.
 @!@!@ENDMSG 2219 @!@!@
 @!@!@STARTMSG 2185:0 @!@!@
-Starting... (2014-02-16 09:30:54)
+Starting... (2014-02-16 09:39:42)
 @!@!@ENDMSG 2185 @!@!@
 @!@!@STARTMSG 2189:0 @!@!@
 Computing initial states...
@@ -32,7 +32,7 @@ Computing initial states...
 Finished computing initial states: 1 distinct state generated.
 @!@!@ENDMSG 2190 @!@!@
 @!@!@STARTMSG 2110:1 @!@!@
-Invariant inv_139257185447027000 is violated.
+Invariant inv_139257238161532000 is violated.
 @!@!@ENDMSG 2110 @!@!@
 @!@!@STARTMSG 2121:1 @!@!@
 The behavior up to this point is:
@@ -44,92 +44,92 @@ The behavior up to this point is:
 
 @!@!@ENDMSG 2217 @!@!@
 @!@!@STARTMSG 2217:4 @!@!@
-2: <Action line 14, col 14 to line 15, col 26 of module DieHard>
+2: <Action line 44, col 12 to line 45, col 28 of module PDieHard>
 /\ big = 5
 /\ small = 0
 
 @!@!@ENDMSG 2217 @!@!@
 @!@!@STARTMSG 2217:4 @!@!@
-3: <Action line 37, col 19 to line 38, col 44 of module DieHard>
+3: <Action line 55, col 12 to line 57, col 42 of module PDieHard>
 /\ big = 2
 /\ small = 3
 
 @!@!@ENDMSG 2217 @!@!@
 @!@!@STARTMSG 2217:4 @!@!@
-4: <Action line 17, col 15 to line 17, col 40 of module DieHard>
+4: <Action line 50, col 12 to line 51, col 24 of module PDieHard>
 /\ big = 2
 /\ small = 0
 
 @!@!@ENDMSG 2217 @!@!@
 @!@!@STARTMSG 2217:4 @!@!@
-5: <Action line 37, col 19 to line 38, col 44 of module DieHard>
+5: <Action line 55, col 12 to line 57, col 42 of module PDieHard>
 /\ big = 0
 /\ small = 2
 
 @!@!@ENDMSG 2217 @!@!@
 @!@!@STARTMSG 2217:4 @!@!@
-6: <Action line 14, col 14 to line 15, col 26 of module DieHard>
+6: <Action line 44, col 12 to line 45, col 28 of module PDieHard>
 /\ big = 5
 /\ small = 2
 
 @!@!@ENDMSG 2217 @!@!@
 @!@!@STARTMSG 2217:4 @!@!@
-7: <Action line 37, col 19 to line 38, col 44 of module DieHard>
+7: <Action line 55, col 12 to line 57, col 42 of module PDieHard>
 /\ big = 4
 /\ small = 3
 
 @!@!@ENDMSG 2217 @!@!@
 @!@!@STARTMSG 2201:0 @!@!@
-The coverage statistics at 2014-02-16 09:30:55
+The coverage statistics at 2014-02-16 09:39:42
 @!@!@ENDMSG 2201 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 11, col 17 to line 11, col 26 of module DieHard: 12
+  line 44, col 15 to line 44, col 22 of module PDieHard: 16
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 12, col 17 to line 12, col 28 of module DieHard: 12
+  line 45, col 15 to line 45, col 28 of module PDieHard: 16
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 14, col 17 to line 14, col 30 of module DieHard: 12
+  line 46, col 15 to line 46, col 24 of module PDieHard: 16
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 15, col 17 to line 15, col 26 of module DieHard: 12
+  line 47, col 15 to line 47, col 24 of module PDieHard: 16
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 17, col 15 to line 17, col 24 of module DieHard: 12
+  line 48, col 15 to line 48, col 22 of module PDieHard: 16
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 17, col 29 to line 17, col 40 of module DieHard: 12
+  line 49, col 15 to line 49, col 28 of module PDieHard: 16
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 18, col 15 to line 18, col 24 of module DieHard: 12
+  line 50, col 15 to line 50, col 24 of module PDieHard: 16
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 18, col 29 to line 18, col 42 of module DieHard: 12
+  line 51, col 15 to line 51, col 24 of module PDieHard: 16
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 33, col 22 to line 33, col 44 of module DieHard: 12
+  line 53, col 20 to line 53, col 38 of module PDieHard: 15
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 34, col 22 to line 34, col 44 of module DieHard: 12
+  line 54, col 20 to line 54, col 42 of module PDieHard: 15
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 37, col 22 to line 37, col 44 of module DieHard: 12
+  line 56, col 20 to line 56, col 38 of module PDieHard: 15
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 38, col 22 to line 38, col 44 of module DieHard: 12
+  line 57, col 20 to line 57, col 42 of module PDieHard: 15
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2202:0 @!@!@
 End of statistics.
 @!@!@ENDMSG 2202 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(7) at 2014-02-16 09:30:55: 73 states generated (257647 s/min), 14 distinct states found (49411 ds/min), 2 states left on queue.
+Progress(8) at 2014-02-16 09:39:42: 95 states generated (438461 s/min), 16 distinct states found (73846 ds/min), 0 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2199:0 @!@!@
-73 states generated, 14 distinct states found, 2 states left on queue.
+95 states generated, 16 distinct states found, 0 states left on queue.
 @!@!@ENDMSG 2199 @!@!@
 @!@!@STARTMSG 2194:0 @!@!@
-The depth of the complete state graph search is 7.
+The depth of the complete state graph search is 8.
 @!@!@ENDMSG 2194 @!@!@
 @!@!@STARTMSG 2186:0 @!@!@
-Finished. (2014-02-16 09:30:55)
+Finished. (2014-02-16 09:39:42)
 @!@!@ENDMSG 2186 @!@!@

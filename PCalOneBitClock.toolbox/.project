@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>PDieHard</name>
+	<name>PCalOneBitClock</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -21,9 +21,9 @@
 	</natures>
 	<linkedResources>
 		<link>
-			<name>PDieHard.tla</name>
+			<name>PCalOneBitClock.tla</name>
 			<type>1</type>
-			<location>/Users/bbeckman/Documents/TLASpecs/PDieHard.tla</location>
+			<location>/Users/bbeckman/Documents/TLASpecs/PCalOneBitClock.tla</location>
 		</link>
 	</linkedResources>
 </projectDescription>

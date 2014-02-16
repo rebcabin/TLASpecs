@@ -939,25 +939,68 @@
 \begin{document}
 \tlatex
 \setboolean{shading}{true}
-\@x{}\moduleLeftDash\@xx{ {\MODULE} OneBitClock}\moduleRightDash\@xx{}%
+\@x{}\moduleLeftDash\@xx{ {\MODULE} DieHard}\moduleRightDash\@xx{}%
 \@x{ {\EXTENDS} Integers}%
 \@pvspace{8.0pt}%
-\@x{ {\VARIABLE} b}%
+\@x{ {\VARIABLES} big ,\, small}%
 \@pvspace{8.0pt}%
-\@x{ TypeOK \.{\defeq} b \.{\in} \{ 0 ,\, 1 \}}%
+ \@x{ TypeOK \.{\defeq} big \.{\in} 0 \.{\dotdot} 5 \.{\land} small \.{\in} 0
+ \.{\dotdot} 3}%
 \@pvspace{8.0pt}%
-\@x{ Init1\@s{4.12} \.{\defeq} ( b\@s{7.42} \.{=} 0 ) \.{\lor} ( b \.{=} 1 )}%
+\@x{ Init \.{\defeq} \.{\land} big\@s{10.88} \.{=} 0}%
+\@x{\@s{35.70} \.{\land} small \.{=} 0}%
 \@pvspace{8.0pt}%
-\@x{ Next3 \.{\defeq} b \.{'}\@s{8.50} \.{=} ( b \.{+} 1 ) \.{\%} 2}%
+\@x{ FillSmall \.{\defeq} \.{\land} small \.{'} \.{=} 3}%
+\@x{\@s{59.67} \.{\land} big \.{'}\@s{10.88} \.{=} big}%
 \@pvspace{8.0pt}%
- \@x{ Next4 \.{\defeq} \.{\land} ( b \.{=} 0 ) \.{\implies} ( b \.{'} \.{=} 1
- )}%
-\@x{\@s{44.83} \.{\land} ( b \.{=} 1 ) \.{\implies} ( b \.{'} \.{=} 0 )}%
+\@x{ FillBig\@s{9.97} \.{\defeq} \.{\land} small \.{'} \.{=} small}%
+\@x{\@s{59.67} \.{\land} big \.{'}\@s{10.88} \.{=} 5}%
 \@pvspace{8.0pt}%
-\@x{ Next1 \.{\defeq} \.{\lor} \.{\land} ( b\@s{4.1} \.{=} 0 )}%
-\@x{\@s{55.94} \.{\land} ( b \.{'}\@s{1.29} \.{=} 1 )}%
-\@x{\@s{44.83} \.{\lor} \.{\land} ( b\@s{4.09} \.{=} 1 )}%
-\@x{\@s{55.94} \.{\land} ( b \.{'}\@s{1.29} \.{=} 0 )}%
+ \@x{ EmptySmall \.{\defeq} small \.{'} \.{=} 0 \.{\land} big \.{'}\@s{10.88}
+ \.{=} big}%
+ \@x{ EmptyBig\@s{9.97} \.{\defeq} big \.{'}\@s{10.88} \.{=} 0 \.{\land} small
+ \.{'} \.{=} small}%
+\@pvspace{8.0pt}%
+\@x{ Min ( n ,\, m ) \.{\defeq} {\IF} m \.{<} n \.{\THEN} m \.{\ELSE} n}%
+\@pvspace{8.0pt}%
+\begin{lcom}{0}%
+\begin{cpar}{0}{F}{F}{0}{0}{}%
+ When pouring from small to big, we first ask if \ensuremath{big \.{+} small
+ \.{>} 5}. If
+ so, we make \ensuremath{big\.{'} \.{=} 5} and \ensuremath{small\.{'} \.{=}
+ small \.{-}} (\ensuremath{5 \.{-} big}); if not, we make
+ \ensuremath{big\.{'} \.{=} big \.{+} small} and \ensuremath{small\.{'} \.{=}
+ 0}. In the former case, the amount
+ poured is \ensuremath{5 \.{-} big}; in the latter case, the amount poured is
+ small,
+ which equals (\ensuremath{big \.{+} small) \.{-} big}. In both cases, the
+ amount poured is
+ \ensuremath{Min(big \.{+} small,\, 5) \.{-} big}.
+\end{cpar}%
+\vshade{5.0}%
+\begin{cpar}{0}{F}{F}{0}{0}{}%
+Symmetric reasoning applies to pouring from big to small.
+\end{cpar}%
+\end{lcom}%
+\@pvspace{8.0pt}%
+ \@x{ SmallToBig\@s{0.14} \.{\defeq} \.{\LET} poured \.{\defeq} Min ( big
+ \.{+} small ,\, 5 ) \.{-} big}%
+ \@x{\@s{70.66} \.{\IN} \.{\land} big \.{'}\@s{10.88} \.{=} big\@s{18.93}
+ \.{+} poured}%
+\@x{\@s{91.06} \.{\land} small \.{'} \.{=} small\@s{8.05} \.{-} poured}%
+\@pvspace{8.0pt}%
+ \@x{ BigToSmall \.{\defeq} \.{\LET} poured \.{\defeq} Min ( big \.{+} small
+ ,\, 3 ) \.{-} small}%
+ \@x{\@s{70.66} \.{\IN} \.{\land} big \.{'}\@s{10.88} \.{=} big\@s{18.93}
+ \.{-} poured}%
+\@x{\@s{91.06} \.{\land} small \.{'} \.{=} small\@s{8.05} \.{+} poured}%
+\@pvspace{8.0pt}%
+\@x{ Next \.{\defeq} \.{\lor} FillSmall}%
+\@x{\@s{39.83} \.{\lor} FillBig}%
+\@x{\@s{39.83} \.{\lor} EmptySmall}%
+\@x{\@s{39.83} \.{\lor} EmptyBig}%
+\@x{\@s{39.83} \.{\lor} SmallToBig}%
+\@x{\@s{39.83} \.{\lor} BigToSmall}%
 \@pvspace{8.0pt}%
 \@x{}\bottombar\@xx{}%
 \setboolean{shading}{false}
@@ -966,13 +1009,13 @@
 \ensuremath{\.{\,\backslash\,}}* Modification History
 \end{cpar}%
 \begin{cpar}{0}{F}{F}{0}{0}{}%
- \ensuremath{\.{\,\backslash\,}}* Last modified \ensuremath{Fri}
- \ensuremath{Feb} 14 08:01:40 \ensuremath{PST} 2014 by \ensuremath{bbeckman
+ \ensuremath{\.{\,\backslash\,}}* Last modified Sun \ensuremath{Feb} 16
+ 09:34:25 \ensuremath{PST} 2014 by \ensuremath{bbeckman
 }%
 \end{cpar}%
 \begin{cpar}{0}{F}{F}{0}{0}{}%
  \ensuremath{\.{\,\backslash\,}}* Created \ensuremath{Fri} \ensuremath{Feb} 14
- 06:47:02 \ensuremath{PST} 2014 by \ensuremath{bbeckman
+ 08:11:11 \ensuremath{PST} 2014 by \ensuremath{bbeckman
 }%
 \end{cpar}%
 \end{lcom}%

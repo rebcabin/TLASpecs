@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/MacPorts 2012_5) (format=pdflatex 2013.2.24)  16 FEB 2014 08:45
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/MacPorts 2012_5) (format=pdflatex 2013.2.24)  16 FEB 2014 09:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**OneBitClock.tex
-(./OneBitClock.tex
+**DieHard.tex
+(./DieHard.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, cz
 ech, slovak, dutch, ukenglish, usenglishmax, basque, french, german-x-2012-05-3
@@ -80,8 +80,8 @@ Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks14
 \verbatim@line=\toks15
 \verbatim@in@stream=\read1
-) (./OneBitClock.aux)
-\openout1 = `OneBitClock.aux'.
+) (./DieHard.aux)
+\openout1 = `DieHard.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 939.
 LaTeX Font Info:    ... okay on input line 939.
@@ -118,35 +118,37 @@ LaTeX Font Info:    Try loading font information for U+lasy on input line 942.
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 966.
+(Font)              <8> on input line 969.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 966.
+(Font)              <6> on input line 969.
 [1
 
-{/opt/local/var/db/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./OneBitClock.au
-x) ) 
+{/opt/local/var/db/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./DieHard.aux) )
+ 
 Here is how much of TeX's memory you used:
  1285 strings out of 494763
- 15854 string characters out of 3171442
- 70066 words of memory out of 3000000
+ 15818 string characters out of 3171442
+ 77066 words of memory out of 3000000
  4547 multiletter control sequences out of 15000+200000
  8505 words of font info for 33 fonts, out of 3000000 for 9000
  134 hyphenation exceptions out of 8191
- 23i,10n,25p,236b,250s stack positions out of 5000i,500n,10000p,200000b,50000s
-</opt/local/share/texmf-texlive-dist/fonts/type1/public/amsfonts/cm/cmcsc10
-.pfb></opt/local/share/texmf-texlive-dist/fonts/type1/public/amsfonts/cm/cmmi10
-.pfb></opt/local/share/texmf-texlive-dist/fonts/type1/public/amsfonts/cm/cmr10.
-pfb></opt/local/share/texmf-texlive-dist/fonts/type1/public/amsfonts/cm/cmr5.pf
-b></opt/local/share/texmf-texlive-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-</opt/local/share/texmf-texlive-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-</opt/local/share/texmf-texlive-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><
-/opt/local/share/texmf-texlive-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></
-opt/local/share/texmf-texlive-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></
-opt/local/share/texmf-texlive-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on OneBitClock.pdf (1 page, 94410 bytes).
+ 23i,10n,25p,232b,317s stack positions out of 5000i,500n,10000p,200000b,50000s
+</opt/local/share/texmf-texlive-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
+></opt/local/share/texmf-texlive-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+></opt/local/share/texmf-texlive-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb>
+</opt/local/share/texmf-texlive-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
+/opt/local/share/texmf-texlive-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></o
+pt/local/share/texmf-texlive-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></opt
+/local/share/texmf-texlive-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt
+/local/share/texmf-texlive-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></opt/
+local/share/texmf-texlive-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></opt/l
+ocal/share/texmf-texlive-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></opt/lo
+cal/share/texmf-texlive-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></opt/lo
+cal/share/texmf-texlive-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
+Output written on DieHard.pdf (1 page, 115358 bytes).
 PDF statistics:
- 48 PDF objects out of 1000 (max. 8388607)
- 34 compressed objects within 1 object stream
+ 56 PDF objects out of 1000 (max. 8388607)
+ 40 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

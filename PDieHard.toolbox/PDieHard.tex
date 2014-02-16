@@ -939,26 +939,133 @@
 \begin{document}
 \tlatex
 \setboolean{shading}{true}
-\@x{}\moduleLeftDash\@xx{ {\MODULE} OneBitClock}\moduleRightDash\@xx{}%
+\@x{}\moduleLeftDash\@xx{ {\MODULE} PDieHard}\moduleRightDash\@xx{}%
 \@x{ {\EXTENDS} Integers}%
+\@x{ Min ( n ,\, m ) \.{\defeq} {\IF} m \.{<} n \.{\THEN} m \.{\ELSE} n}%
 \@pvspace{8.0pt}%
-\@x{ {\VARIABLE} b}%
+\begin{lcom}{5.0}%
+\begin{cpar}{0}{F}{F}{0}{0}{}%
+**************************************************************************
+\end{cpar}%
+\end{lcom}%
+\pcalsymbolstrue
+\pcalshadingtrue
+\csyntaxtrue
+\@x{ {\p@mmalgorithm} DieHard}%
+ \@x{\@s{8.2} {\p@lbrace} {\p@variables} big \.{=} 0 ,\, small \.{=} 0
+ {\p@semicolon}}%
+\@x{\@s{17.78} {\p@lbrace} {\p@while} {\p@lparen} {\TRUE} {\p@rparen}}%
+\@x{\@s{27.36} {\p@lbrace} {\p@either} big \.{:=} 5\@s{14.98}}%
+\@y{\@s{0}%
+ fill the big jug
+}%
+\@xx{}%
+\@x{\@s{36.95} {\p@or}\@s{18.84} small \.{:=} 3\@s{4.10}}%
+\@y{\@s{0}%
+ fill the samll jug
+}%
+\@xx{}%
+\@x{\@s{36.95} {\p@or}\@s{18.84} big \.{:=} 0\@s{14.98}}%
+\@y{\@s{0}%
+ empty the big jug
+}%
+\@xx{}%
+\@x{\@s{36.95} {\p@or}\@s{18.84} small \.{:=} 0\@s{4.10}}%
+\@y{\@s{0}%
+ empty the samll jug
+}%
+\@xx{}%
 \@pvspace{8.0pt}%
-\@x{ TypeOK \.{\defeq} b \.{\in} \{ 0 ,\, 1 \}}%
+\begin{lcom}{0}%
+\begin{cpar}{0}{F}{F}{0}{0}{}%
+ When pouring from small to big, we first ask if \ensuremath{big \.{+} small
+ \.{>} 5}. If
+ so, we make \ensuremath{big\.{'} \.{=} 5} and \ensuremath{small\.{'} \.{=}
+ small \.{-}} (\ensuremath{5 \.{-} big}); if not, we make
+ \ensuremath{big\.{'} \.{=} big \.{+} small} and \ensuremath{small\.{'} \.{=}
+ 0}. In the former case, the amount
+ poured is \ensuremath{5 \.{-} big}; in the latter case, the amount poured is
+ small,
+ which equals (\ensuremath{big \.{+} small) \.{-} big}. In both cases, the
+ amount poured is
+ \ensuremath{Min(big \.{+} small,\, 5) \.{-} big}.
+\end{cpar}%
+\vshade{5.0}%
+\begin{cpar}{0}{F}{F}{0}{0}{}%
+Symmetric reasoning applies to pouring from big to small.
+\end{cpar}%
+\end{lcom}%
 \@pvspace{8.0pt}%
-\@x{ Init1\@s{4.12} \.{\defeq} ( b\@s{7.42} \.{=} 0 ) \.{\lor} ( b \.{=} 1 )}%
+\@x{\@s{32.8} {\p@or}\@s{16.4}}%
+\@y{\@s{0}%
+ pour from small to big
+}%
+\@xx{}%
+ \@x{\@s{63.51} {\p@with} {\p@lparen} poured \.{=} Min ( big \.{+} small ,\, 5
+ ) \.{-} big {\p@rparen}}%
+ \@x{\@s{79.91} {\p@lbrace} big\@s{10.88} \.{:=} big \.{+} poured
+ {\p@semicolon}}%
+\@x{\@s{89.50} small \.{:=} small \.{-} poured {\p@rbrace}}%
+\@x{\@s{32.8} {\p@or}\@s{16.40}}%
+\@y{\@s{0}%
+ pour from big to small
+}%
+\@xx{}%
+ \@x{\@s{63.51} {\p@with} {\p@lparen} poured \.{=} Min ( big \.{+} small ,\, 3
+ ) \.{-} small {\p@rparen}}%
+ \@x{\@s{79.91} {\p@lbrace} big\@s{10.88} \.{:=} big \.{-} poured
+ {\p@semicolon}}%
+\@x{\@s{89.50} small \.{:=} small \.{+} poured {\p@rbrace}}%
+\@x{\@s{8.2} {\p@rbrace} {\p@rbrace} {\p@rbrace}}%
+\@y{}%
+\@xx{}%
+\pcalshadingfalse \pcalsymbolsfalse
+\begin{lcom}{7.5}%
+\begin{cpar}{0}{F}{F}{0}{0}{}%
+**************************************************************************
+\end{cpar}%
+\end{lcom}%
+\@x{}%
+\@y{\@s{0}%
+ BEGIN TRANSLATION
+}%
+\@xx{}%
+\@x{ {\VARIABLES} big ,\, small}%
 \@pvspace{8.0pt}%
-\@x{ Next3 \.{\defeq} b \.{'}\@s{8.50} \.{=} ( b \.{+} 1 ) \.{\%} 2}%
+\@x{ vars\@s{2.10} \.{\defeq} {\langle} big ,\, small {\rangle}}%
 \@pvspace{8.0pt}%
- \@x{ Next4 \.{\defeq} \.{\land} ( b \.{=} 0 ) \.{\implies} ( b \.{'} \.{=} 1
- )}%
-\@x{\@s{44.83} \.{\land} ( b \.{=} 1 ) \.{\implies} ( b \.{'} \.{=} 0 )}%
+\@x{ Init\@s{4.12} \.{\defeq}}%
+\@y{\@s{0}%
+ Global variables
+}%
+\@xx{}%
+\@x{\@s{39.83} \.{\land} big \.{=} 0}%
+\@x{\@s{39.83} \.{\land} small \.{=} 0}%
 \@pvspace{8.0pt}%
-\@x{ Next1 \.{\defeq} \.{\lor} \.{\land} ( b\@s{4.1} \.{=} 0 )}%
-\@x{\@s{55.94} \.{\land} ( b \.{'}\@s{1.29} \.{=} 1 )}%
-\@x{\@s{44.83} \.{\lor} \.{\land} ( b\@s{4.09} \.{=} 1 )}%
-\@x{\@s{55.94} \.{\land} ( b \.{'}\@s{1.29} \.{=} 0 )}%
+\@x{ Next \.{\defeq} \.{\lor} \.{\land} big \.{'} \.{=} 5}%
+\@x{\@s{50.94} \.{\land} small \.{'} \.{=} small}%
+\@x{\@s{39.83} \.{\lor} \.{\land} small \.{'} \.{=} 3}%
+\@x{\@s{50.94} \.{\land} big \.{'} \.{=} big}%
+\@x{\@s{39.83} \.{\lor} \.{\land} big \.{'} \.{=} 0}%
+\@x{\@s{50.94} \.{\land} small \.{'} \.{=} small}%
+\@x{\@s{39.83} \.{\lor} \.{\land} small \.{'} \.{=} 0}%
+\@x{\@s{50.94} \.{\land} big \.{'} \.{=} big}%
+ \@x{\@s{39.83} \.{\lor} \.{\land} \.{\LET} poured \.{\defeq} Min ( big \.{+}
+ small ,\, 5 ) \.{-} big \.{\IN}}%
+\@x{\@s{70.25} \.{\land} big \.{'} \.{=} big \.{+} poured}%
+\@x{\@s{70.25} \.{\land} small \.{'} \.{=} small \.{-} poured}%
+ \@x{\@s{39.83} \.{\lor} \.{\land} \.{\LET} poured \.{\defeq} Min ( big \.{+}
+ small ,\, 3 ) \.{-} small \.{\IN}}%
+\@x{\@s{70.25} \.{\land} big \.{'} \.{=} big \.{-} poured}%
+\@x{\@s{70.25} \.{\land} small \.{'} \.{=} small \.{+} poured}%
 \@pvspace{8.0pt}%
+\@x{ Spec\@s{1.46} \.{\defeq} Init \.{\land} {\Box} [ Next ]_{ vars}}%
+\@pvspace{8.0pt}%
+\@x{}%
+\@y{\@s{0}%
+ END TRANSLATION
+}%
+\@xx{}%
 \@x{}\bottombar\@xx{}%
 \setboolean{shading}{false}
 \begin{lcom}{0}%
@@ -966,13 +1073,13 @@
 \ensuremath{\.{\,\backslash\,}}* Modification History
 \end{cpar}%
 \begin{cpar}{0}{F}{F}{0}{0}{}%
- \ensuremath{\.{\,\backslash\,}}* Last modified \ensuremath{Fri}
- \ensuremath{Feb} 14 08:01:40 \ensuremath{PST} 2014 by \ensuremath{bbeckman
+ \ensuremath{\.{\,\backslash\,}}* Last modified Sun \ensuremath{Feb} 16
+ 09:37:33 \ensuremath{PST} 2014 by \ensuremath{bbeckman
 }%
 \end{cpar}%
 \begin{cpar}{0}{F}{F}{0}{0}{}%
  \ensuremath{\.{\,\backslash\,}}* Created \ensuremath{Fri} \ensuremath{Feb} 14
- 06:47:02 \ensuremath{PST} 2014 by \ensuremath{bbeckman
+ 11:17:04 \ensuremath{PST} 2014 by \ensuremath{bbeckman
 }%
 \end{cpar}%
 \end{lcom}%

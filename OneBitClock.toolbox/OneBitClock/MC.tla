@@ -2,17 +2,17 @@
 EXTENDS OneBitClock, TLC
 
 \* INIT definition @modelBehaviorInit:0
-init_139239371264543000 ==
-Init1
+init_139256947346620000 ==
+TypeOK
 ----
 \* NEXT definition @modelBehaviorNext:0
-next_139239371265744000 ==
-Next4
+next_139256947347721000 ==
+Next2
 ----
 \* INVARIANT definition @modelCorrectnessInvariants:0
-inv_139239371266845000 ==
+inv_139256947348822000 ==
 TypeOK
 ----
 =============================================================================
 \* Modification History
-\* Created Fri Feb 14 08:01:52 PST 2014 by bbeckman
+\* Created Sun Feb 16 08:51:13 PST 2014 by bbeckman

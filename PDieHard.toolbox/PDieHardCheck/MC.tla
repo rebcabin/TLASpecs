@@ -2,9 +2,13 @@
 EXTENDS PDieHard, TLC
 
 \* SPECIFICATION definition @modelBehaviorSpec:0
-spec_13925244528153000 ==
+spec_139257238160431000 ==
 Spec
+----
+\* INVARIANT definition @modelCorrectnessInvariants:0
+inv_139257238161532000 ==
+big /= 4
 ----
 =============================================================================
 \* Modification History
-\* Created Sat Feb 15 20:20:52 PST 2014 by rebcabin
+\* Created Sun Feb 16 09:39:41 PST 2014 by bbeckman
