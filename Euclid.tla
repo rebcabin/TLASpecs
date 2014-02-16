@@ -1,0 +1,63 @@
+------------------------------- MODULE Euclid -------------------------------
+EXTENDS Integers, GCD, TLC
+
+CONSTANTS M, N
+
+ASSUME {M, N} \subseteq Nat \ {0} \* `subset' doesn't seem to work
+
+(***************************************************************************
+--fair algorithm Euclid
+  {  variables x \in 1..N, y \in 1..N, x0 = x, y0 = y;
+    { while (x /= y)
+      { if (x < y) { y := y - x; }
+        else       { x := x - y; }
+
+      };
+      \* This assert is vapidly true because of the way PlusCal
+      \* translates it to TLA+. It appears before the update of
+      \* pc (via pc'), so pc never equals "Done".
+      assert (pc = "Done") => (x = y) /\ (x = GCD(x0, y0));
+  } }
+ ***************************************************************************)
+\* BEGIN TRANSLATION
+VARIABLES x, y, x0, y0, pc
+
+vars == << x, y, x0, y0, pc >>
+
+Init == (* Global variables *)
+        /\ x \in 1..N
+        /\ y \in 1..N
+        /\ x0 = x
+        /\ y0 = y
+        /\ pc = "Lbl_1"
+
+Lbl_1 == /\ pc = "Lbl_1"
+         /\ IF x /= y
+               THEN /\ IF x < y
+                          THEN /\ y' = y - x
+                               /\ x' = x
+                          ELSE /\ x' = x - y
+                               /\ y' = y
+                    /\ pc' = "Lbl_1"
+               ELSE /\ Assert((pc = "Done") => (x = y) /\ (x = GCD(x0, y0)), 
+                              "Failure of assertion at line 19, column 7.")
+                    /\ pc' = "Done"
+                    /\ UNCHANGED << x, y >>
+         /\ UNCHANGED << x0, y0 >>
+
+Next == Lbl_1
+           \/ (* Disjunct to prevent deadlock on termination *)
+              (pc = "Done" /\ UNCHANGED vars)
+
+Spec == /\ Init /\ [][Next]_vars
+        /\ WF_vars(Next)
+
+Termination == <>(pc = "Done")
+
+\* END TRANSLATION
+
+PartialCorrectness == (pc = "Done") => (x = y) /\ (x = GCD(x0, y0))
+=============================================================================
+\* Modification History
+\* Last modified Fri Feb 14 18:17:55 PST 2014 by bbeckman
+\* Created Fri Feb 14 15:53:12 PST 2014 by bbeckman
