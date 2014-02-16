@@ -8,14 +8,20 @@ Semantic processing of module MC
 SANY finished.
 @!@!@ENDMSG 2219 @!@!@
 @!@!@STARTMSG 2185:0 @!@!@
-Starting... (2014-02-15 19:54:41)
+Starting... (2014-02-15 19:58:39)
 @!@!@ENDMSG 2185 @!@!@
+@!@!@STARTMSG 2212:0 @!@!@
+Implied-temporal checking--satisfiability problem has 1 branches.
+@!@!@ENDMSG 2212 @!@!@
 @!@!@STARTMSG 2189:0 @!@!@
 Computing initial states...
 @!@!@ENDMSG 2189 @!@!@
 @!@!@STARTMSG 2190:0 @!@!@
 Finished computing initial states: 1 distinct state generated.
 @!@!@ENDMSG 2190 @!@!@
+@!@!@STARTMSG 2192:0 @!@!@
+Checking temporal properties for the complete state space...
+@!@!@ENDMSG 2192 @!@!@
 @!@!@STARTMSG 2193:0 @!@!@
 Model checking completed. No error has been found.
   Estimates of the probability that TLC did not check all reachable states
@@ -24,7 +30,7 @@ Model checking completed. No error has been found.
   based on the actual fingerprints:  val = 8.9E-19
 @!@!@ENDMSG 2193 @!@!@
 @!@!@STARTMSG 2201:0 @!@!@
-The coverage statistics at 2014-02-15 19:54:41
+The coverage statistics at 2014-02-15 19:58:40
 @!@!@ENDMSG 2201 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
   line 44, col 16 to line 44, col 30 of module Handshake: 2
@@ -48,7 +54,7 @@ The coverage statistics at 2014-02-15 19:54:41
 End of statistics.
 @!@!@ENDMSG 2202 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(4) at 2014-02-15 19:54:41: 5 states generated (15000 s/min), 4 distinct states found (12000 ds/min), 0 states left on queue.
+Progress(4) at 2014-02-15 19:58:40: 5 states generated (7500 s/min), 4 distinct states found (6000 ds/min), 0 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2199:0 @!@!@
 5 states generated, 4 distinct states found, 0 states left on queue.
@@ -57,5 +63,5 @@ Progress(4) at 2014-02-15 19:54:41: 5 states generated (15000 s/min), 4 distinct
 The depth of the complete state graph search is 4.
 @!@!@ENDMSG 2194 @!@!@
 @!@!@STARTMSG 2186:0 @!@!@
-Finished. (2014-02-15 19:54:41)
+Finished. (2014-02-15 19:58:40)
 @!@!@ENDMSG 2186 @!@!@

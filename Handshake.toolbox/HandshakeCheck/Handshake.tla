@@ -19,7 +19,7 @@ a (+) b == (a + b) % 2
               }
       }
  
-    process (Consumer = 1)
+    fair process (Consumer = 1)
       { c1: while (TRUE)
               { await p /= c ;
                 box := Get(box) ;
@@ -52,7 +52,8 @@ Consumer == /\ p /= c
 
 Next == Producer \/ Consumer
 
-Spec == Init /\ [][Next]_vars
+Spec == /\ Init /\ [][Next]_vars
+        /\ WF_vars(Consumer)
 
 \* END TRANSLATION
 
@@ -60,5 +61,5 @@ A == INSTANCE Alternation WITH b <- p (+) c, box <- box
 
 =============================================================================
 \* Modification History
-\* Last modified Sat Feb 15 19:52:56 PST 2014 by rebcabin
+\* Last modified Sat Feb 15 19:58:32 PST 2014 by rebcabin
 \* Created Sat Feb 15 19:18:04 PST 2014 by rebcabin
