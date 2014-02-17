@@ -7,7 +7,7 @@ CONSTANTS Input
 ASSUME /\ Input \subseteq Nat \ {0}
        /\ Input /= {}
        /\ IsFiniteSet(Input)
-
+       
 (***************************************************************************
 --fair algorithm SetGCD
   { variables S = Input;
@@ -27,7 +27,7 @@ Init == (* Global variables *)
         /\ pc = "Lbl_1"
 
 Lbl_1 == /\ pc = "Lbl_1"
-         /\ IF Cardinality(S) > 1
+         /\ IF \E x, y \in S : x /= y
                THEN /\ \E x \in S:
                          \E y \in {s \in S : s > x}:
                            S' = ((S \ {y}) \cup {y - x})
@@ -48,6 +48,11 @@ Termination == <>(pc = "Done")
 
 SetGCD(T) == SetMax({d \in Int : \A t \in T : Divides(d, t)})
 
+RECURSIVE SetSum(_)
+SetSum(T) == IF T = {} THEN 0
+                       ELSE LET t == CHOOSE x \in T : TRUE
+                            IN  t + SetSum(T \ {t})
+
 PC == (pc = "Done") => (S = {SetGCD(Input)})
 
 TypeOK == /\ S \subseteq Nat \ {0}
@@ -59,5 +64,5 @@ SInv == /\ TypeOK
         /\ PC
 =============================================================================
 \* Modification History
-\* Last modified Sun Feb 16 17:04:20 PST 2014 by bbeckman
+\* Last modified Sun Feb 16 17:28:00 PST 2014 by bbeckman
 \* Created Sun Feb 16 16:14:10 PST 2014 by bbeckman
