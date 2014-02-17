@@ -8,7 +8,7 @@ ASSUME {M, N} \subseteq Nat \ {0} \* `subset' doesn't seem to work
 
 (***************************************************************************
 --fair algorithm Euclid
-  {  variables x = M, y = N;
+  { variables x = M, y = N;
     { loop: while (x /= y)
       \* The Greek word for the following process of repeated subtraction
       \* is `antanaresis.'               
@@ -54,7 +54,7 @@ Termination == <>(pc = "Done")
 
 \* PC means `PartialCorrectness,' but it's a lot easier to write and read.
 
-PC == (pc = "Done") => (x = y) /\ (x = GCD(M, N))
+\* PC == (pc = "Done") => (x = y) /\ (x = GCD(M, N))
 
 TypeOK == /\ x \in Nat \ {0}
           /\ y \in Nat \ {0}
@@ -68,10 +68,15 @@ InductiveInv == /\ Inv
 
 I1 == Init => Inv
 I2 == (~Init) /\ Inv /\ Next => Inv'
-I3 == Inv => PC
+\* I3 == Inv => PC
+
+\* Proving Termination: section 4.9.3 of hyperbook.
+W  == x + y
+L1 == (~Init /\ Inv) => (W \in Nat) \/ (pc = "Done")
+L2 == (~Init /\ Inv /\ Next) => (W > W') \/ (pc' = "Done")
 
 
 =============================================================================
 \* Modification History
-\* Last modified Sun Feb 16 15:42:10 PST 2014 by bbeckman
+\* Last modified Sun Feb 16 16:11:22 PST 2014 by bbeckman
 \* Created Sun Feb 16 10:15:18 PST 2014 by bbeckman
