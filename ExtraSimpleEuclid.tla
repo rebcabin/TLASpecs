@@ -14,8 +14,7 @@ ASSUME {M, N} \subseteq Nat \ {0} \* `subset' doesn't seem to work
       \* is `antanaresis.'               
       { antanaresis: if (x < y) { y := y - x; } 
                      else       { x := x - y; }
-      }
-  } }
+  } } }
  ***************************************************************************)
 \* BEGIN TRANSLATION
 VARIABLES x, y, pc
@@ -47,7 +46,7 @@ Next == loop \/ antanaresis
 
 Spec == /\ Init /\ [][Next]_vars
         /\ WF_vars(Next)
-        
+
 Termination == <>(pc = "Done")
 
 \* END TRANSLATION
@@ -83,5 +82,5 @@ L2 == (~Init /\ Inv /\ Next) => (W > W') \/ (pc' = "Done")
 
 =============================================================================
 \* Modification History
-\* Last modified Sun Feb 16 17:19:51 PST 2014 by bbeckman
+\* Last modified Mon Feb 17 07:49:28 PST 2014 by bbeckman
 \* Created Sun Feb 16 10:15:18 PST 2014 by bbeckman

@@ -62,7 +62,12 @@ TypeOK == /\ S \subseteq Nat \ {0}
 SInv == /\ TypeOK
         /\ SetGCD(S) = SetGCD(Input)
         /\ PC
+        
+\* Proving Termination: section 4.9.3 of hyperbook.
+W  == 1
+L1 == SInv => (W \in Nat) \/ (pc = "Done")
+L2 == (SInv /\ Next) => (W > W') \/ (pc' = "Done")
 =============================================================================
 \* Modification History
-\* Last modified Sun Feb 16 17:28:00 PST 2014 by bbeckman
+\* Last modified Sun Feb 16 17:30:04 PST 2014 by bbeckman
 \* Created Sun Feb 16 16:14:10 PST 2014 by bbeckman

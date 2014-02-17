@@ -46,13 +46,6 @@ Termination == <>(pc = "Done")
 
 \* END TRANSLATION
 
-SetGCD(T) == SetMax({d \in Int : \A t \in T : Divides(d, t)})
-
-RECURSIVE SetSum(_)
-SetSum(T) == IF T = {} THEN 0
-                       ELSE LET t == CHOOSE x \in T : TRUE
-                            IN  t + SetSum(T \ {t})
-
 PC == (pc = "Done") => (S = {SetGCD(Input)})
 
 TypeOK == /\ S \subseteq Nat \ {0}
@@ -69,5 +62,5 @@ L1 == SInv => (W \in Nat) \/ (pc = "Done")
 L2 == (SInv /\ Next) => (W > W') \/ (pc' = "Done")
 =============================================================================
 \* Modification History
-\* Last modified Sun Feb 16 17:30:04 PST 2014 by bbeckman
+\* Last modified Mon Feb 17 08:30:01 PST 2014 by bbeckman
 \* Created Sun Feb 16 16:14:10 PST 2014 by bbeckman

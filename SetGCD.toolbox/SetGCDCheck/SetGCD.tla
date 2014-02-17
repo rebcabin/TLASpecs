@@ -7,7 +7,7 @@ CONSTANTS Input
 ASSUME /\ Input \subseteq Nat \ {0}
        /\ Input /= {}
        /\ IsFiniteSet(Input)
-
+       
 (***************************************************************************
 --fair algorithm SetGCD
   { variables S = Input;
@@ -46,8 +46,6 @@ Termination == <>(pc = "Done")
 
 \* END TRANSLATION
 
-SetGCD(T) == SetMax({d \in Int : \A t \in T : Divides(d, t)})
-
 PC == (pc = "Done") => (S = {SetGCD(Input)})
 
 TypeOK == /\ S \subseteq Nat \ {0}
@@ -57,7 +55,12 @@ TypeOK == /\ S \subseteq Nat \ {0}
 SInv == /\ TypeOK
         /\ SetGCD(S) = SetGCD(Input)
         /\ PC
+        
+\* Proving Termination: section 4.9.3 of hyperbook.
+W  == 1
+L1 == SInv => (W \in Nat) \/ (pc = "Done")
+L2 == (SInv /\ Next) => (W > W') \/ (pc' = "Done")
 =============================================================================
 \* Modification History
-\* Last modified Sun Feb 16 17:04:20 PST 2014 by bbeckman
+\* Last modified Mon Feb 17 08:30:01 PST 2014 by bbeckman
 \* Created Sun Feb 16 16:14:10 PST 2014 by bbeckman
