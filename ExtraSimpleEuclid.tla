@@ -47,7 +47,7 @@ Next == loop \/ antanaresis
 
 Spec == /\ Init /\ [][Next]_vars
         /\ WF_vars(Next)
-
+        
 Termination == <>(pc = "Done")
 
 \* END TRANSLATION
@@ -56,8 +56,9 @@ Termination == <>(pc = "Done")
 
 \* PC == (pc = "Done") => (x = y) /\ (x = GCD(M, N))
 
-TypeOK == /\ x \in Nat \ {0}
-          /\ y \in Nat \ {0}
+TypeOK == /\ x \in 1..M
+          /\ y \in 1..N
+          /\ pc \in {"loop", "antanaresis", "Done"}
 
 Inv == /\ TypeOK
        /\ GCD(x, y) = GCD(M, N) 
@@ -65,6 +66,10 @@ Inv == /\ TypeOK
        
 InductiveInv == /\ Inv
                 /\ (pc = "antanaresis") => (x /= y)
+
+Specl2 == /\ InductiveInv /\ [][Next]_vars
+          /\ WF_vars(Next)
+
 
 I1 == Init => Inv
 I2 == (~Init) /\ Inv /\ Next => Inv'
@@ -78,5 +83,5 @@ L2 == (~Init /\ Inv /\ Next) => (W > W') \/ (pc' = "Done")
 
 =============================================================================
 \* Modification History
-\* Last modified Sun Feb 16 16:11:22 PST 2014 by bbeckman
+\* Last modified Sun Feb 16 17:19:51 PST 2014 by bbeckman
 \* Created Sun Feb 16 10:15:18 PST 2014 by bbeckman
