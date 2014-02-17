@@ -21,6 +21,7 @@
 <booleanAttribute key="modelCorrectnessCheckDeadlock" value="true"/>
 <listAttribute key="modelCorrectnessInvariants">
 <listEntry value="1\A j \in Jugs : injug[j] /= Goal"/>
+<listEntry value="1NecessaryCondition"/>
 </listAttribute>
 <listAttribute key="modelCorrectnessProperties"/>
 <stringAttribute key="modelExpressionEval" value=""/>
@@ -31,7 +32,9 @@
 <listEntry value="Capacity;;(big :&gt; 5) @@ (small :&gt; 3);0;0"/>
 </listAttribute>
 <stringAttribute key="modelParameterContraint" value=""/>
-<listAttribute key="modelParameterDefinitions"/>
+<listAttribute key="modelParameterDefinitions">
+<listEntry value="Int;;-50..100;0;0"/>
+</listAttribute>
 <stringAttribute key="modelParameterModelValues" value="{}"/>
 <stringAttribute key="modelParameterNewDefinitions" value=""/>
 <intAttribute key="numberOfWorkers" value="4"/>

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/MacPorts 2012_5) (format=pdflatex 2013.2.24)  16 FEB 2014 08:45
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/MacPorts 2012_5) (format=pdflatex 2013.2.24)  17 FEB 2014 09:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -118,9 +118,9 @@ LaTeX Font Info:    Try loading font information for U+lasy on input line 942.
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 966.
+(Font)              <8> on input line 969.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 966.
+(Font)              <6> on input line 969.
 [1
 
 {/opt/local/var/db/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./OneBitClock.au
@@ -128,7 +128,7 @@ x) )
 Here is how much of TeX's memory you used:
  1285 strings out of 494763
  15854 string characters out of 3171442
- 70066 words of memory out of 3000000
+ 71066 words of memory out of 3000000
  4547 multiletter control sequences out of 15000+200000
  8505 words of font info for 33 fonts, out of 3000000 for 9000
  134 hyphenation exceptions out of 8191
@@ -143,7 +143,7 @@ b></opt/local/share/texmf-texlive-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
 /opt/local/share/texmf-texlive-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></
 opt/local/share/texmf-texlive-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></
 opt/local/share/texmf-texlive-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on OneBitClock.pdf (1 page, 94410 bytes).
+Output written on OneBitClock.pdf (1 page, 95539 bytes).
 PDF statistics:
  48 PDF objects out of 1000 (max. 8388607)
  34 compressed objects within 1 object stream

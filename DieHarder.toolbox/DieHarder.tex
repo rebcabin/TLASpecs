@@ -940,7 +940,7 @@
 \tlatex
 \setboolean{shading}{true}
 \@x{}\moduleLeftDash\@xx{ {\MODULE} DieHarder}\moduleRightDash\@xx{}%
-\@x{ {\EXTENDS} Integers}%
+\@x{ {\EXTENDS} Integers ,\, GCD}%
 \@pvspace{8.0pt}%
 \@x{ {\CONSTANTS} Goal ,\, Jugs ,\, Capacity}%
 \@pvspace{8.0pt}%
@@ -958,7 +958,7 @@
 \pcalshadingtrue
 \csyntaxtrue
 \@x{ {\p@mmalgorithm} DieHarder}%
- \@x{\@s{8.2} {\p@lbrace} {\p@variables} x ,\, injug \.{=} [ j \.{\in} Jugs
+ \@x{\@s{8.2} {\p@lbrace} {\p@variable} injug \.{=} [ j \.{\in} Jugs
  \.{\mapsto} 0 ] {\p@semicolon}}%
 \@x{\@s{17.78} {\p@lbrace} {\p@while} {\p@lparen} {\TRUE} {\p@rparen}}%
  \@x{\@s{27.36} {\p@lbrace} {\p@either} {\p@with} {\p@lparen} j \.{\in} Jugs
@@ -975,6 +975,7 @@
 }}%
 \@xx{}%
 \@x{\@s{70.11} {\p@lbrace} injug [ j ] \.{:=} 0 {\p@rbrace}}%
+\@pvspace{8.0pt}%
 \begin{lcom}{0}%
 \begin{cpar}{0}{F}{F}{0}{0}{}%
  When pouring from \ensuremath{j} to \ensuremath{k}, we first ask if
@@ -1019,34 +1020,30 @@
  BEGIN TRANSLATION
 }%
 \@xx{}%
-\@x{ {\CONSTANT} defaultInitValue}%
-\@x{ {\VARIABLES} x ,\, injug}%
+\@x{ {\VARIABLE} injug}%
 \@pvspace{8.0pt}%
-\@x{ vars\@s{2.10} \.{\defeq} {\langle} x ,\, injug {\rangle}}%
+\@x{ vars\@s{2.10} \.{\defeq} {\langle} injug {\rangle}}%
 \@pvspace{8.0pt}%
 \@x{ Init\@s{4.12} \.{\defeq}}%
 \@y{\@s{0}%
  Global variables
 }%
 \@xx{}%
-\@x{\@s{39.83} \.{\land} x \.{=} defaultInitValue}%
 \@x{\@s{39.83} \.{\land} injug \.{=} [ j \.{\in} Jugs \.{\mapsto} 0 ]}%
 \@pvspace{8.0pt}%
- \@x{ Next \.{\defeq} \.{\land} \.{\lor} \.{\land} \E\, j\@s{9.27} \.{\in}
- Jugs \.{:}}%
- \@x{\@s{81.36} injug \.{'} \.{=} [ injug {\EXCEPT} {\bang} [ j ] \.{=}
+\@x{ Next \.{\defeq} \.{\lor} \.{\land} \E\, j \.{\in} Jugs \.{:}}%
+ \@x{\@s{70.25} injug \.{'} \.{=} [ injug {\EXCEPT} {\bang} [ j ] \.{=}
  Capacity [ j ] ]}%
-\@x{\@s{50.94} \.{\lor} \.{\land} \E\, j \.{\in} Jugs \.{:}}%
-\@x{\@s{81.36} injug \.{'} \.{=} [ injug {\EXCEPT} {\bang} [ j ] \.{=} 0 ]}%
-\@x{\@s{50.94} \.{\lor} \.{\land} \E\, j \.{\in} Jugs \.{:}}%
-\@x{\@s{81.36} \E\, k \.{\in} Jugs \.{\,\backslash\,} \{ j \} \.{:}}%
- \@x{\@s{89.56} \.{\LET} poured \.{\defeq} Min ( injug [ j ] \.{+} injug [ k ]
+\@x{\@s{39.83} \.{\lor} \.{\land} \E\, j \.{\in} Jugs \.{:}}%
+\@x{\@s{70.25} injug \.{'} \.{=} [ injug {\EXCEPT} {\bang} [ j ] \.{=} 0 ]}%
+\@x{\@s{39.83} \.{\lor} \.{\land} \E\, j \.{\in} Jugs \.{:}}%
+\@x{\@s{70.25} \E\, k \.{\in} Jugs \.{\,\backslash\,} \{ j \} \.{:}}%
+ \@x{\@s{78.45} \.{\LET} poured \.{\defeq} Min ( injug [ j ] \.{+} injug [ k ]
  ,\, Capacity [ k ] )}%
-\@x{\@s{157.86} \.{-} injug [ k ] \.{\IN}}%
- \@x{\@s{97.76} injug \.{'} \.{=} [ injug {\EXCEPT} {\bang} [ j ]\@s{1.16}
+\@x{\@s{146.75} \.{-} injug [ k ] \.{\IN}}%
+ \@x{\@s{86.65} injug \.{'} \.{=} [ injug {\EXCEPT} {\bang} [ j ]\@s{1.16}
  \.{=} injug [ j ]\@s{1.16} \.{-} poured ,\,}%
-\@x{\@s{203.91} {\bang} [ k ] \.{=} injug [ k ] \.{+} poured ]}%
-\@x{\@s{39.83} \.{\land} x \.{'} \.{=} x}%
+\@x{\@s{192.80} {\bang} [ k ] \.{=} injug [ k ] \.{+} poured ]}%
 \@pvspace{8.0pt}%
 \@x{ Spec\@s{1.46} \.{\defeq} Init \.{\land} {\Box} [ Next ]_{ vars}}%
 \@pvspace{8.0pt}%
@@ -1055,6 +1052,96 @@
  END TRANSLATION
 }%
 \@xx{}%
+\@pvspace{8.0pt}%
+\@x{ NecessaryCondition \.{\defeq} \A\, j \.{\in} Jugs \.{:}}%
+ \@x{\@s{8.2} Divides ( SetGCD ( \{ Capacity [ k ] \.{:} k \.{\in} Jugs \} )
+ ,\,}%
+\@x{\@s{44.99} injug [ j ] )}%
+\@pvspace{8.0pt}%
+\begin{lcom}{0}%
+\begin{cpar}{0}{F}{F}{0}{0}{}%
+ Proof by induction that existence of a solution implies that the
+ \ensuremath{GCD} of
+ the jug capacities divides the contents of each jug after any amount of
+ pouring.
+\end{cpar}%
+\vshade{5.0}%
+\begin{cpar}{0}{F}{F}{0}{0}{}%
+ Every pouring event consists in either filling the destination jug
+ \ensuremath{k} or
+ in emptying the source jug \ensuremath{j} into \ensuremath{k}.
+\end{cpar}%
+\vshade{5.0}%
+\begin{cpar}{0}{F}{F}{0}{0}{}%
+ A sequence of pouring events must begin with \ensuremath{j} full and the
+ \ensuremath{k} empty
+ because prior to the first pouring, the only possible actions are
+ filling or emptying jugs. Before this event, all jugs are either full
+ or empty, with at least one jug empty. That means \ensuremath{injug[j]} is
+ either
+ \ensuremath{Capacity[j]} or 0 for every \ensuremath{j}. The invariant is
+ maintained because the
+ \ensuremath{GCD} of all jugs\mbox{'} capacities divides every jug capacity
+ individuallyk,
+ and the \ensuremath{GCD} of all jugs\mbox{'} capacities divides 0.
+\end{cpar}%
+\vshade{5.0}%
+\begin{cpar}{0}{F}{F}{0}{0}{}%
+ In case the capacity of the destination jug \ensuremath{k} is greater than or
+ equal
+ to the contents of the source jug \ensuremath{j}, the entire contents of
+ \ensuremath{j} is poured
+ into \ensuremath{k}. In this case, because the amount poured is equal to
+\end{cpar}%
+\begin{cpar}{0}{F}{F}{0}{0}{}%
+ \ensuremath{Capacity[j]}, and because the \ensuremath{GCD} of all
+ jugs\mbox{'} capacities divides the
+\end{cpar}%
+\begin{cpar}{0}{F}{F}{0}{0}{}%
+ \ensuremath{Capacity[j]} (the \ensuremath{GCD} of all jugs\mbox{'} capacities
+ divides every individual
+ jug capacity), the invariant is maintained.
+\end{cpar}%
+\vshade{5.0}%
+\begin{cpar}{0}{F}{F}{0}{0}{}%
+ In case the capacity of \ensuremath{k} is less than the contents of
+ \ensuremath{j}, then \ensuremath{k} will
+ be filled and \ensuremath{injug[j]} will be reduced by
+ \ensuremath{Capacity[k]}, that is,
+ \ensuremath{injug[j]} will become \ensuremath{Capacity[j] \.{-}
+ Capacity[k]}. But the \ensuremath{GCD} of all
+ jugs\mbox{'} capacities divides this quantity, so the invariant is
+ maintained.
+\end{cpar}%
+\vshade{5.0}%
+\begin{cpar}{0}{F}{F}{0}{0}{}%
+That establishes the base case.
+\end{cpar}%
+\vshade{5.0}%
+\begin{cpar}{0}{F}{F}{0}{0}{}%
+Now assume an intermediate situation where the jugs have various
+ amounts in them, \ensuremath{injug[j]} for all \ensuremath{j} in
+ \ensuremath{Jugs}, where all \ensuremath{injug[j]} are
+ divisible by the \ensuremath{GCD}, by the induction hypothesis. A pouring
+ event
+ will replqce \ensuremath{injug[j]} with \ensuremath{injug[j] \.{-}
+ amount\_poured} and \ensuremath{injug[k]} with
+ \ensuremath{injug[k] \.{+} amount\_poured}, where
+ \ensuremath{amount\_poured} is either \ensuremath{injug[j]},
+ emptying \ensuremath{j}, or \ensuremath{Capacity[k] \.{-} injug[k]}, either
+ emptying \ensuremath{j} or leaving
+ some in it. But all quantities are divisible by \ensuremath{GCD} of all
+ jugs\mbox{'}
+ capacities, again using the induction hypothesis.
+\end{cpar}%
+\vshade{5.0}%
+\begin{cpar}{0}{F}{F}{0}{0}{}%
+Thus, an initial state where all jugs contain a divisible amount leads,
+ by any possible pouring event, to a next state where all jugs contain
+ divisible amounts. The induction is thus proved.
+\end{cpar}%
+\end{lcom}%
+\@pvspace{8.0pt}%
 \@x{}\bottombar\@xx{}%
 \setboolean{shading}{false}
 \begin{lcom}{0}%
@@ -1063,7 +1150,7 @@
 \end{cpar}%
 \begin{cpar}{0}{F}{F}{0}{0}{}%
  \ensuremath{\.{\,\backslash\,}}* Last modified \ensuremath{Mon}
- \ensuremath{Feb} 17 08:13:37 \ensuremath{PST} 2014 by \ensuremath{bbeckman
+ \ensuremath{Feb} 17 09:13:53 \ensuremath{PST} 2014 by \ensuremath{bbeckman
 }%
 \end{cpar}%
 \begin{cpar}{0}{F}{F}{0}{0}{}%
