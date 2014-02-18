@@ -9,10 +9,10 @@ Starting SANY...
 @!@!@ENDMSG 2220 @!@!@
 Parsing file MC.tla
 Parsing file Handshake.tla
-Parsing file /Users/rebcabin/Dropbox/toolbox/plugins/org.lamport.tlatools_1.0.0.201304250137/tla2sany/StandardModules/TLC.tla
-Parsing file /Users/rebcabin/Dropbox/toolbox/plugins/org.lamport.tlatools_1.0.0.201304250137/tla2sany/StandardModules/Integers.tla
-Parsing file /Users/rebcabin/Dropbox/toolbox/plugins/org.lamport.tlatools_1.0.0.201304250137/tla2sany/StandardModules/Sequences.tla
-Parsing file /Users/rebcabin/Dropbox/toolbox/plugins/org.lamport.tlatools_1.0.0.201304250137/tla2sany/StandardModules/Naturals.tla
+Parsing file /Users/bbeckman/Documents/toolbox/plugins/org.lamport.tlatools_1.0.0.201304250137/tla2sany/StandardModules/TLC.tla
+Parsing file /Users/bbeckman/Documents/toolbox/plugins/org.lamport.tlatools_1.0.0.201304250137/tla2sany/StandardModules/Integers.tla
+Parsing file /Users/bbeckman/Documents/toolbox/plugins/org.lamport.tlatools_1.0.0.201304250137/tla2sany/StandardModules/Sequences.tla
+Parsing file /Users/bbeckman/Documents/toolbox/plugins/org.lamport.tlatools_1.0.0.201304250137/tla2sany/StandardModules/Naturals.tla
 Parsing file Alternation.tla
 Semantic processing of module Naturals
 Semantic processing of module Integers
@@ -25,7 +25,7 @@ Semantic processing of module MC
 SANY finished.
 @!@!@ENDMSG 2219 @!@!@
 @!@!@STARTMSG 2185:0 @!@!@
-Starting... (2014-02-15 20:31:25)
+Starting... (2014-02-18 09:39:56)
 @!@!@ENDMSG 2185 @!@!@
 @!@!@STARTMSG 2212:0 @!@!@
 Implied-temporal checking--satisfiability problem has 1 branches.
@@ -47,7 +47,7 @@ Model checking completed. No error has been found.
   based on the actual fingerprints:  val = 6.1E-17
 @!@!@ENDMSG 2193 @!@!@
 @!@!@STARTMSG 2201:0 @!@!@
-The coverage statistics at 2014-02-15 20:31:26
+The coverage statistics at 2014-02-18 09:39:57
 @!@!@ENDMSG 2201 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
   line 47, col 10 to line 47, col 38 of module Handshake: 2
@@ -101,7 +101,7 @@ The coverage statistics at 2014-02-15 20:31:26
 End of statistics.
 @!@!@ENDMSG 2202 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(8) at 2014-02-15 20:31:26: 9 states generated (4153 s/min), 8 distinct states found (3692 ds/min), 0 states left on queue.
+Progress(8) at 2014-02-18 09:39:57: 9 states generated (13500 s/min), 8 distinct states found (12000 ds/min), 0 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2199:0 @!@!@
 9 states generated, 8 distinct states found, 0 states left on queue.
@@ -110,5 +110,5 @@ Progress(8) at 2014-02-15 20:31:26: 9 states generated (4153 s/min), 8 distinct 
 The depth of the complete state graph search is 8.
 @!@!@ENDMSG 2194 @!@!@
 @!@!@STARTMSG 2186:0 @!@!@
-Finished. (2014-02-15 20:31:26)
+Finished. (2014-02-18 09:39:57)
 @!@!@ENDMSG 2186 @!@!@
