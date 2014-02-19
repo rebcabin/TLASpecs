@@ -2,13 +2,13 @@
 EXTENDS Alternation, TLC
 
 \* SPECIFICATION definition @modelBehaviorSpec:0
-spec_139274495899373000 ==
+spec_1392831451589158000 ==
 Spec
 ----
 \* INVARIANT definition @modelCorrectnessInvariants:0
-inv_139274495900574000 ==
+inv_1392831451599159000 ==
 Len(box) <= 1
 ----
 =============================================================================
 \* Modification History
-\* Created Tue Feb 18 09:35:59 PST 2014 by bbeckman
+\* Created Wed Feb 19 09:37:31 PST 2014 by bbeckman

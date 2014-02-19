@@ -23,7 +23,7 @@ Semantic processing of module MC
 SANY finished.
 @!@!@ENDMSG 2219 @!@!@
 @!@!@STARTMSG 2185:0 @!@!@
-Starting... (2014-02-18 09:35:59)
+Starting... (2014-02-19 09:37:32)
 @!@!@ENDMSG 2185 @!@!@
 @!@!@STARTMSG 2189:0 @!@!@
 Computing initial states...
@@ -39,25 +39,25 @@ Model checking completed. No error has been found.
   based on the actual fingerprints:  val = 1.9E-19
 @!@!@ENDMSG 2193 @!@!@
 @!@!@STARTMSG 2201:0 @!@!@
-The coverage statistics at 2014-02-18 09:35:59
+The coverage statistics at 2014-02-19 09:37:32
 @!@!@ENDMSG 2201 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 41, col 16 to line 41, col 30 of module Alternation: 1
+  line 36, col 16 to line 36, col 30 of module Alternation: 1
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 42, col 16 to line 42, col 21 of module Alternation: 1
+  line 37, col 16 to line 37, col 21 of module Alternation: 1
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 45, col 16 to line 45, col 30 of module Alternation: 1
+  line 40, col 16 to line 40, col 30 of module Alternation: 1
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 46, col 16 to line 46, col 21 of module Alternation: 1
+  line 41, col 16 to line 41, col 21 of module Alternation: 1
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2202:0 @!@!@
 End of statistics.
 @!@!@ENDMSG 2202 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(2) at 2014-02-18 09:35:59: 3 states generated (9000 s/min), 2 distinct states found (6000 ds/min), 0 states left on queue.
+Progress(2) at 2014-02-19 09:37:32: 3 states generated (9473 s/min), 2 distinct states found (6315 ds/min), 0 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2199:0 @!@!@
 3 states generated, 2 distinct states found, 0 states left on queue.
@@ -66,5 +66,5 @@ Progress(2) at 2014-02-18 09:35:59: 3 states generated (9000 s/min), 2 distinct 
 The depth of the complete state graph search is 2.
 @!@!@ENDMSG 2194 @!@!@
 @!@!@STARTMSG 2186:0 @!@!@
-Finished. (2014-02-18 09:35:59)
+Finished. (2014-02-19 09:37:32)
 @!@!@ENDMSG 2186 @!@!@

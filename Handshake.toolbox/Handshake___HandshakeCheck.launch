@@ -24,7 +24,8 @@
 <listEntry value="0pc[1] = &quot;c1&quot;"/>
 </listAttribute>
 <listAttribute key="modelCorrectnessProperties">
-<listEntry value="1A!Spec"/>
+<listEntry value="0A!Spec"/>
+<listEntry value="1A2!Spec"/>
 </listAttribute>
 <stringAttribute key="modelExpressionEval" value=""/>
 <stringAttribute key="modelParameterActionConstraint" value=""/>
@@ -39,5 +40,8 @@
 <intAttribute key="simuDepth" value="100"/>
 <intAttribute key="simuSeed" value="-1"/>
 <stringAttribute key="specName" value="Handshake"/>
+<listAttribute key="traceExploreExpressions">
+<listEntry value="1p(+)c"/>
+</listAttribute>
 <stringAttribute key="view" value=""/>
 </launchConfiguration>
