@@ -25,7 +25,7 @@ Semantic processing of module MC
 SANY finished.
 @!@!@ENDMSG 2219 @!@!@
 @!@!@STARTMSG 2185:0 @!@!@
-Starting... (2014-02-19 09:48:03)
+Starting... (2014-02-20 12:55:08)
 @!@!@ENDMSG 2185 @!@!@
 @!@!@STARTMSG 2212:0 @!@!@
 Implied-temporal checking--satisfiability problem has 1 branches.
@@ -47,7 +47,7 @@ Model checking completed. No error has been found.
   based on the actual fingerprints:  val = 6.1E-17
 @!@!@ENDMSG 2193 @!@!@
 @!@!@STARTMSG 2201:0 @!@!@
-The coverage statistics at 2014-02-19 09:48:04
+The coverage statistics at 2014-02-20 12:55:09
 @!@!@ENDMSG 2201 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
   line 42, col 10 to line 42, col 38 of module Handshake: 2
@@ -125,7 +125,7 @@ The coverage statistics at 2014-02-19 09:48:04
 End of statistics.
 @!@!@ENDMSG 2202 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(12) at 2014-02-19 09:48:04: 13 states generated (16595 s/min), 12 distinct states found (15319 ds/min), 0 states left on queue.
+Progress(12) at 2014-02-20 12:55:09: 13 states generated (11641 s/min), 12 distinct states found (10746 ds/min), 0 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2199:0 @!@!@
 13 states generated, 12 distinct states found, 0 states left on queue.
@@ -134,5 +134,5 @@ Progress(12) at 2014-02-19 09:48:04: 13 states generated (16595 s/min), 12 disti
 The depth of the complete state graph search is 12.
 @!@!@ENDMSG 2194 @!@!@
 @!@!@STARTMSG 2186:0 @!@!@
-Finished. (2014-02-19 09:48:04)
+Finished. (2014-02-20 12:55:09)
 @!@!@ENDMSG 2186 @!@!@

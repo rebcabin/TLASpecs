@@ -2,17 +2,17 @@
 EXTENDS Handshake, TLC
 
 \* SPECIFICATION definition @modelBehaviorSpec:0
-spec_1392832083198163000 ==
+spec_1392929708319260000 ==
 Spec
 ----
 \* INVARIANT definition @modelCorrectnessInvariants:0
-inv_1392832083209164000 ==
+inv_1392929708330261000 ==
 Len(box) <= 1
 ----
 \* PROPERTY definition @modelCorrectnessProperties:0
-prop_1392832083219165000 ==
+prop_1392929708341262000 ==
 A2!Spec
 ----
 =============================================================================
 \* Modification History
-\* Created Wed Feb 19 09:48:03 PST 2014 by bbeckman
+\* Created Thu Feb 20 12:55:08 PST 2014 by bbeckman

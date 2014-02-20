@@ -173,8 +173,11 @@ MutualExclusion == ~(InCS(0) /\ InCS(1))
 
 Inv == /\ TypeOK
        /\ MutualExclusion
-       /\ \A i \in {0, 1} : InCS(i) \/ (pc[i] = "e2") => x[i]          
+       /\ \A i \in {0, 1} : InCS(i) \/ (pc[i] = "e2") => x[i]
+       
+ISpec == Inv /\ [][Next]_<<x, pc>>
+TSpec == TypeOK /\ [][Next]_<<x, pc>>
 =============================================================================
 \* Modification History
-\* Last modified Thu Feb 20 10:54:51 PST 2014 by bbeckman
+\* Last modified Thu Feb 20 12:32:55 PST 2014 by bbeckman
 \* Created Wed Feb 19 19:02:08 PST 2014 by bbeckman

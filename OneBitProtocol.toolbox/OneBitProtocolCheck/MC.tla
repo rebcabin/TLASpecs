@@ -1,18 +1,22 @@
 ---- MODULE MC ----
 EXTENDS OneBitProtocol, TLC
 
-\* SPECIFICATION definition @modelBehaviorSpec:0
-spec_1392923536288175000 ==
-Spec
+\* INIT definition @modelBehaviorInit:0
+init_1392928714141247000 ==
+Init
+----
+\* NEXT definition @modelBehaviorNext:0
+next_1392928714152248000 ==
+Next
 ----
 \* INVARIANT definition @modelCorrectnessInvariants:0
-inv_1392923536299176000 ==
+inv_1392928714163249000 ==
 MutualExclusion
 ----
 \* INVARIANT definition @modelCorrectnessInvariants:1
-inv_1392923536309177000 ==
+inv_1392928714174250000 ==
 Inv
 ----
 =============================================================================
 \* Modification History
-\* Created Thu Feb 20 11:12:16 PST 2014 by bbeckman
+\* Created Thu Feb 20 12:38:34 PST 2014 by bbeckman

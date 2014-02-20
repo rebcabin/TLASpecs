@@ -18,8 +18,10 @@ Next1 == \/ /\ (b  = 0)
             /\ (b' = 1)
          \/ /\ (b  = 1)
             /\ (b' = 0)
+            
+Next5 == b' = 1 - b
 
 =============================================================================
 \* Modification History
-\* Last modified Sun Feb 16 08:51:04 PST 2014 by bbeckman
+\* Last modified Thu Feb 20 12:47:54 PST 2014 by bbeckman
 \* Created Fri Feb 14 06:47:02 PST 2014 by bbeckman
