@@ -2,7 +2,7 @@
 <launchConfiguration type="org.lamport.tla.toolbox.tool.tlc.modelCheck">
 <stringAttribute key="TLCCmdLineParameters" value=""/>
 <intAttribute key="autoLockTime" value="15"/>
-<stringAttribute key="configurationName" value="OneBitProtocolCheck"/>
+<stringAttribute key="configurationName" value="OneBitTwoProcesssCheck"/>
 <intAttribute key="dfidDepth" value="100"/>
 <booleanAttribute key="dfidMode" value="false"/>
 <booleanAttribute key="distributedTLC" value="false"/>
@@ -13,8 +13,8 @@
 <intAttribute key="maxHeapSize" value="25"/>
 <intAttribute key="maxSetSize" value="1000000"/>
 <booleanAttribute key="mcMode" value="true"/>
-<stringAttribute key="modelBehaviorInit" value="Init"/>
-<stringAttribute key="modelBehaviorNext" value="Next"/>
+<stringAttribute key="modelBehaviorInit" value=""/>
+<stringAttribute key="modelBehaviorNext" value=""/>
 <stringAttribute key="modelBehaviorSpec" value="ISpec"/>
 <intAttribute key="modelBehaviorSpecType" value="1"/>
 <stringAttribute key="modelBehaviorVars" value="x, pc"/>
@@ -23,7 +23,10 @@
 <listEntry value="1MutualExclusion"/>
 <listEntry value="1Inv"/>
 </listAttribute>
-<listAttribute key="modelCorrectnessProperties"/>
+<listAttribute key="modelCorrectnessProperties">
+<listEntry value="0A!Spec"/>
+<listEntry value="1A!ISpec"/>
+</listAttribute>
 <stringAttribute key="modelExpressionEval" value=""/>
 <stringAttribute key="modelParameterActionConstraint" value=""/>
 <listAttribute key="modelParameterConstants"/>
@@ -36,6 +39,6 @@
 <intAttribute key="simuAril" value="-1"/>
 <intAttribute key="simuDepth" value="100"/>
 <intAttribute key="simuSeed" value="-1"/>
-<stringAttribute key="specName" value="OneBitProtocol"/>
+<stringAttribute key="specName" value="OneBitTwoProcesses"/>
 <stringAttribute key="view" value=""/>
 </launchConfiguration>

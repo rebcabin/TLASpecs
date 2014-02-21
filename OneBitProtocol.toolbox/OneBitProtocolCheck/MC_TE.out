@@ -23,69 +23,69 @@ Semantic processing of module MC
 SANY finished.
 @!@!@ENDMSG 2219 @!@!@
 @!@!@STARTMSG 2185:0 @!@!@
-Starting... (2014-02-20 12:38:34)
+Starting... (2014-02-21 05:39:07)
 @!@!@ENDMSG 2185 @!@!@
 @!@!@STARTMSG 2189:0 @!@!@
 Computing initial states...
 @!@!@ENDMSG 2189 @!@!@
 @!@!@STARTMSG 2190:0 @!@!@
-Finished computing initial states: 4 distinct states generated.
+Finished computing initial states: 35 distinct states generated.
 @!@!@ENDMSG 2190 @!@!@
 @!@!@STARTMSG 2193:0 @!@!@
 Model checking completed. No error has been found.
   Estimates of the probability that TLC did not check all reachable states
   because two distinct states had the same fingerprint:
-  calculated (optimistic):  val = 1.7E-16
+  calculated (optimistic):  val = 2.2E-16
   based on the actual fingerprints:  val = 3.1E-16
 @!@!@ENDMSG 2193 @!@!@
 @!@!@STARTMSG 2201:0 @!@!@
-The coverage statistics at 2014-02-20 12:38:34
+The coverage statistics at 2014-02-21 05:39:08
 @!@!@ENDMSG 2201 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 139, col 23 to line 139, col 49 of module OneBitProtocol: 48
+  line 138, col 23 to line 138, col 49 of module OneBitProtocol: 48
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 140, col 21 to line 140, col 51 of module OneBitProtocol: 48
+  line 139, col 21 to line 139, col 51 of module OneBitProtocol: 48
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 142, col 21 to line 142, col 52 of module OneBitProtocol: 24
+  line 141, col 21 to line 141, col 52 of module OneBitProtocol: 24
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 143, col 21 to line 143, col 26 of module OneBitProtocol: 24
+  line 142, col 21 to line 142, col 26 of module OneBitProtocol: 24
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 146, col 16 to line 146, col 45 of module OneBitProtocol: 24
+  line 145, col 16 to line 145, col 45 of module OneBitProtocol: 24
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 147, col 16 to line 147, col 47 of module OneBitProtocol: 24
+  line 146, col 16 to line 146, col 47 of module OneBitProtocol: 24
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 151, col 27 to line 151, col 58 of module OneBitProtocol: 4
+  line 150, col 27 to line 150, col 58 of module OneBitProtocol: 4
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 152, col 27 to line 152, col 57 of module OneBitProtocol: 8
+  line 151, col 27 to line 151, col 57 of module OneBitProtocol: 8
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 153, col 16 to line 153, col 21 of module OneBitProtocol: 12
+  line 152, col 16 to line 152, col 21 of module OneBitProtocol: 12
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 157, col 16 to line 157, col 46 of module OneBitProtocol: 10
+  line 156, col 16 to line 156, col 46 of module OneBitProtocol: 10
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 158, col 16 to line 158, col 21 of module OneBitProtocol: 10
+  line 157, col 16 to line 157, col 21 of module OneBitProtocol: 10
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2202:0 @!@!@
 End of statistics.
 @!@!@ENDMSG 2202 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(6) at 2014-02-20 12:38:34: 122 states generated (271111 s/min), 35 distinct states found (77777 ds/min), 0 states left on queue.
+Progress(1) at 2014-02-21 05:39:08: 153 states generated (306000 s/min), 35 distinct states found (70000 ds/min), 0 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2199:0 @!@!@
-122 states generated, 35 distinct states found, 0 states left on queue.
+153 states generated, 35 distinct states found, 0 states left on queue.
 @!@!@ENDMSG 2199 @!@!@
 @!@!@STARTMSG 2194:0 @!@!@
-The depth of the complete state graph search is 6.
+The depth of the complete state graph search is 1.
 @!@!@ENDMSG 2194 @!@!@
 @!@!@STARTMSG 2186:0 @!@!@
-Finished. (2014-02-20 12:38:34)
+Finished. (2014-02-21 05:39:08)
 @!@!@ENDMSG 2186 @!@!@

@@ -120,8 +120,7 @@ EXTENDS Integers
            e1: x[self] := TRUE;
            e2: if (~x[1-self]) { cs: skip };
          }
-    }
-  }
+  } }
  ***************************************************************************)
 \* BEGIN TRANSLATION
 VARIABLES x, pc
@@ -179,5 +178,5 @@ ISpec == Inv /\ [][Next]_<<x, pc>>
 TSpec == TypeOK /\ [][Next]_<<x, pc>>
 =============================================================================
 \* Modification History
-\* Last modified Thu Feb 20 12:32:55 PST 2014 by bbeckman
+\* Last modified Thu Feb 20 16:58:09 PST 2014 by bbeckman
 \* Created Wed Feb 19 19:02:08 PST 2014 by bbeckman
