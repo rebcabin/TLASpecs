@@ -25,69 +25,93 @@ Semantic processing of module MC
 SANY finished.
 @!@!@ENDMSG 2219 @!@!@
 @!@!@STARTMSG 2185:0 @!@!@
-Starting... (2014-02-21 05:39:50)
+Starting... (2014-02-21 13:10:29)
 @!@!@ENDMSG 2185 @!@!@
+@!@!@STARTMSG 2212:0 @!@!@
+Implied-temporal checking--satisfiability problem has 1 branches.
+@!@!@ENDMSG 2212 @!@!@
 @!@!@STARTMSG 2189:0 @!@!@
 Computing initial states...
 @!@!@ENDMSG 2189 @!@!@
 @!@!@STARTMSG 2190:0 @!@!@
-Finished computing initial states: 63 distinct states generated.
+Finished computing initial states: 1 distinct state generated.
 @!@!@ENDMSG 2190 @!@!@
+@!@!@STARTMSG 2192:0 @!@!@
+Checking temporal properties for the complete state space...
+@!@!@ENDMSG 2192 @!@!@
 @!@!@STARTMSG 2193:0 @!@!@
 Model checking completed. No error has been found.
   Estimates of the probability that TLC did not check all reachable states
   because two distinct states had the same fingerprint:
-  calculated (optimistic):  val = 4.3E-16
-  based on the actual fingerprints:  val = 7.7E-16
+  calculated (optimistic):  val = 5.4E-17
+  based on the actual fingerprints:  val = 1.1E-15
 @!@!@ENDMSG 2193 @!@!@
 @!@!@STARTMSG 2201:0 @!@!@
-The coverage statistics at 2014-02-21 05:39:51
+The coverage statistics at 2014-02-21 13:10:29
 @!@!@ENDMSG 2201 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 30, col 17 to line 30, col 48 of module OneBitTwoProcesses: 32
+  line 48, col 17 to line 48, col 48 of module OneBitTwoProcesses: 12
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 31, col 17 to line 31, col 22 of module OneBitTwoProcesses: 32
+  line 49, col 17 to line 49, col 22 of module OneBitTwoProcesses: 12
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 34, col 16 to line 34, col 45 of module OneBitTwoProcesses: 32
+  line 52, col 16 to line 52, col 45 of module OneBitTwoProcesses: 12
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 35, col 16 to line 35, col 47 of module OneBitTwoProcesses: 32
+  line 53, col 16 to line 53, col 47 of module OneBitTwoProcesses: 12
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 39, col 27 to line 39, col 58 of module OneBitTwoProcesses: 6
+  line 57, col 27 to line 57, col 58 of module OneBitTwoProcesses: 5
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 40, col 27 to line 40, col 58 of module OneBitTwoProcesses: 10
+  line 59, col 38 to line 59, col 69 of module OneBitTwoProcesses: 4
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 41, col 16 to line 41, col 21 of module OneBitTwoProcesses: 16
+  line 60, col 38 to line 60, col 69 of module OneBitTwoProcesses: 3
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 45, col 16 to line 45, col 46 of module OneBitTwoProcesses: 14
+  line 61, col 16 to line 61, col 21 of module OneBitTwoProcesses: 12
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 46, col 16 to line 46, col 21 of module OneBitTwoProcesses: 14
+  line 65, col 16 to line 65, col 46 of module OneBitTwoProcesses: 8
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 49, col 15 to line 49, col 45 of module OneBitTwoProcesses: 32
+  line 66, col 16 to line 66, col 21 of module OneBitTwoProcesses: 8
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 50, col 15 to line 50, col 47 of module OneBitTwoProcesses: 32
+  line 69, col 16 to line 69, col 43 of module OneBitTwoProcesses: 5
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 70, col 16 to line 70, col 47 of module OneBitTwoProcesses: 5
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 75, col 27 to line 75, col 58 of module OneBitTwoProcesses: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 76, col 27 to line 76, col 58 of module OneBitTwoProcesses: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 77, col 16 to line 77, col 21 of module OneBitTwoProcesses: 5
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 80, col 15 to line 80, col 45 of module OneBitTwoProcesses: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 81, col 15 to line 81, col 47 of module OneBitTwoProcesses: 8
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2202:0 @!@!@
 End of statistics.
 @!@!@ENDMSG 2202 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(1) at 2014-02-21 05:39:51: 189 states generated (136626 s/min), 63 distinct states found (45542 ds/min), 0 states left on queue.
+Progress(11) at 2014-02-21 13:10:29: 63 states generated (22634 s/min), 31 distinct states found (11137 ds/min), 0 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2199:0 @!@!@
-189 states generated, 63 distinct states found, 0 states left on queue.
+63 states generated, 31 distinct states found, 0 states left on queue.
 @!@!@ENDMSG 2199 @!@!@
 @!@!@STARTMSG 2194:0 @!@!@
-The depth of the complete state graph search is 1.
+The depth of the complete state graph search is 11.
 @!@!@ENDMSG 2194 @!@!@
 @!@!@STARTMSG 2186:0 @!@!@
-Finished. (2014-02-21 05:39:51)
+Finished. (2014-02-21 13:10:29)
 @!@!@ENDMSG 2186 @!@!@

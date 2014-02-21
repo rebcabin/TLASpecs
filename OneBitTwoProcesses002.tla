@@ -1,25 +1,41 @@
-------------------------- MODULE OneBitTwoProcesses -------------------------
+------------------------- MODULE OneBitTwoProcesses002 ----------------------
 
 EXTENDS Integers
 (******************************************************************
 --algorithm OneBit 
   { variable x = [i \in {0,1} |-> FALSE] ;
-    fair process (Proc \in {0,1})
+    fair process (P = 0)
+    { ncs0: while (TRUE)
+                  \* model for non-critical processing
+            {      skip ; 
+              \* Ok, I'm done with that and I want in!
+              e01: x[0] := TRUE ;
+              e02: if (~x[1]) 
+                   \* If the other guy isn't in, I'm in!
+                   { cs0: skip (* This is my critical code! *) }
+                   else 
+                   \* ok, the other guy is in. What do I do?
+                   \* if I'm process 0, I'll keep trying.
+                   { goto e2 } 
+               \* Ok, I'm done. I don't need the critical section now.
+               f0: x[0] := FALSE
+            }
+    } 
+    fair process (P = 1)
     { ncs: while (TRUE)
-                 \* This is the model for my non-critical processing.
+                 \* model for non-critical processing
            {     skip ; 
-             \* Ok, I'm done with that and I want in to the 
-             \* critical section!
+             \* Ok, I'm done with that and I want in!
              e1: x[self] := TRUE ;
              e2: if (~x[1-self]) 
                  \* If the other guy isn't in, I'm in!
-                 { cs: skip (* Model for my critical code! *) }
+                 { cs: skip (* This is my critical code! *) }
                  else 
-                 \* Oops, the other guy is in. What do I do?
+                 \* ok, the other guy is in. What do I do?
                  { if (self = 0) 
-                   \* If I'm process 0, I'll keep trying.
+                   \* if I'm process 0, I'll keep trying.
                    { goto e2 } 
-                   \* But, if I'm process 1, I'll be the nice guy;
+                   \* else, if I'm process 1, I'll be the nice guy;
                    \* I'll stop trying and spin while process 0 is in.
                    else 
                    { e3: x[1] := FALSE ;
@@ -90,14 +106,7 @@ Spec == /\ Init /\ [][Next]_vars
 
 \* END TRANSLATION
 
-PC0Labels   == {"ncs", "f", "e1", "e2", "cs"}
-ExtraLabels == {"e3", "e4"}
-PC1Labels   == PC0Labels \cup ExtraLabels
-
-TypeOK == \* /\ pc[0] \in PC0Labels
-          \* /\ pc[1] \in PC1Labels
-          \* pc \in [{0, 1} -> PC0Labels] (* Does not work; don't know why not *) 
-          /\ pc \in [{0, 1} -> {"ncs", "f", "e1", "e2", "e3", "e4", "cs"}]
+TypeOK == /\ pc \in [{0, 1} -> {"ncs", "f", "e1", "e2", "e3", "e4", "cs"}]
           /\ x  \in [{0, 1} -> BOOLEAN]
           
 InCS(i) == pc[i] = "cs"
@@ -106,7 +115,6 @@ MutualExclusion == ~(InCS(0) /\ InCS(1))
 
 Inv == /\ TypeOK
        /\ MutualExclusion
-       /\ pc[0] \notin {"e3", "e4"}
        /\ \A i \in {0, 1} : InCS(i) \/ (pc[i] = "e2") => x[i]
        
 ISpec == Inv /\ [][Next]_<<x, pc>>
@@ -135,5 +143,5 @@ Trying == /\ pc[0] \in {"e1", "e2"}
 DeadlockFree == Trying ~> (InCS(0) \/ InCS(1))
 =============================================================================
 \* Modification History
-\* Last modified Fri Feb 21 11:27:07 PST 2014 by bbeckman
+\* Last modified Fri Feb 21 08:52:26 PST 2014 by bbeckman
 \* Created Thu Feb 20 13:10:58 PST 2014 by bbeckman

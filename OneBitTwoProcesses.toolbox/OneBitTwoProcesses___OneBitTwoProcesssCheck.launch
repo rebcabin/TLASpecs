@@ -15,7 +15,7 @@
 <booleanAttribute key="mcMode" value="true"/>
 <stringAttribute key="modelBehaviorInit" value=""/>
 <stringAttribute key="modelBehaviorNext" value=""/>
-<stringAttribute key="modelBehaviorSpec" value="ISpec"/>
+<stringAttribute key="modelBehaviorSpec" value="Spec"/>
 <intAttribute key="modelBehaviorSpecType" value="1"/>
 <stringAttribute key="modelBehaviorVars" value="x, pc"/>
 <booleanAttribute key="modelCorrectnessCheckDeadlock" value="true"/>
@@ -25,7 +25,8 @@
 </listAttribute>
 <listAttribute key="modelCorrectnessProperties">
 <listEntry value="0A!Spec"/>
-<listEntry value="1A!ISpec"/>
+<listEntry value="0A!ISpec"/>
+<listEntry value="1DeadlockFree"/>
 </listAttribute>
 <stringAttribute key="modelExpressionEval" value=""/>
 <stringAttribute key="modelParameterActionConstraint" value=""/>

@@ -30,5 +30,10 @@
 			<type>1</type>
 			<location>/Users/bbeckman/Documents/TLASpecs/OneBitTwoProcesses.tla</location>
 		</link>
+		<link>
+			<name>OneBitTwoProcesses002.tla</name>
+			<type>1</type>
+			<location>/Users/bbeckman/Documents/TLASpecs/OneBitTwoProcesses002.tla</location>
+		</link>
 	</linkedResources>
 </projectDescription>
