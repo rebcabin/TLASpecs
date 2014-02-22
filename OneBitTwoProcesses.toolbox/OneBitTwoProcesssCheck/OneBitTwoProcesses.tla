@@ -1,6 +1,6 @@
 ------------------------- MODULE OneBitTwoProcesses -------------------------
-
 EXTENDS Integers
+
 (******************************************************************
 --algorithm OneBit 
   { variable x = [i \in {0,1} |-> FALSE] ;
@@ -133,7 +133,8 @@ MutualExclusion == ~(InCS(0) /\ InCS(1))
 Inv == /\ TypeOK
        /\ MutualExclusion
        /\ pc[0] \notin {"e3", "e4"}
-       /\ \A i \in {0, 1} : InCS(i) \/ (pc[i] = "e2") => x[i]
+       /\ \A i \in {0,1} : WF_vars(Proc(i))
+       /\ \A i \in {0,1} : InCS(i) \/ (pc[i] = "e2") => x[i]
        
 ISpec == Inv /\ [][Next]_<<x, pc>>
 
@@ -156,10 +157,10 @@ A == INSTANCE OneBitProtocol
        IF pc[i] \in {"ncs", "f"} THEN "r" ELSE pc[i]]
 
 Trying == /\ pc[0] \in {"e1", "e2"}
-          /\ pc[1] \in {"e1", "e2", "e3", "e4"}
+          /\ pc[1] \in {"e1", "e2"}
              
 DeadlockFree == Trying ~> (InCS(0) \/ InCS(1))
 =============================================================================
 \* Modification History
-\* Last modified Fri Feb 21 13:10:27 PST 2014 by bbeckman
+\* Last modified Fri Feb 21 19:22:34 PST 2014 by bbeckman
 \* Created Thu Feb 20 13:10:58 PST 2014 by bbeckman

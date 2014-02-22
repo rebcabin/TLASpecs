@@ -15,13 +15,13 @@
 <booleanAttribute key="mcMode" value="true"/>
 <stringAttribute key="modelBehaviorInit" value=""/>
 <stringAttribute key="modelBehaviorNext" value=""/>
-<stringAttribute key="modelBehaviorSpec" value="Spec"/>
+<stringAttribute key="modelBehaviorSpec" value="ISpec"/>
 <intAttribute key="modelBehaviorSpecType" value="1"/>
 <stringAttribute key="modelBehaviorVars" value="x, pc"/>
 <booleanAttribute key="modelCorrectnessCheckDeadlock" value="true"/>
 <listAttribute key="modelCorrectnessInvariants">
-<listEntry value="1MutualExclusion"/>
-<listEntry value="1Inv"/>
+<listEntry value="0MutualExclusion"/>
+<listEntry value="0Inv"/>
 </listAttribute>
 <listAttribute key="modelCorrectnessProperties">
 <listEntry value="0A!Spec"/>

@@ -2,21 +2,13 @@
 EXTENDS OneBitTwoProcesses, TLC
 
 \* SPECIFICATION definition @modelBehaviorSpec:0
-spec_1393017028986911000 ==
-Spec
-----
-\* INVARIANT definition @modelCorrectnessInvariants:0
-inv_1393017028997912000 ==
-MutualExclusion
-----
-\* INVARIANT definition @modelCorrectnessInvariants:1
-inv_1393017029007913000 ==
-Inv
+spec_1393039367237962000 ==
+ISpec
 ----
 \* PROPERTY definition @modelCorrectnessProperties:0
-prop_1393017029017914000 ==
+prop_1393039367248963000 ==
 DeadlockFree
 ----
 =============================================================================
 \* Modification History
-\* Created Fri Feb 21 13:10:29 PST 2014 by bbeckman
+\* Created Fri Feb 21 19:22:47 PST 2014 by bbeckman

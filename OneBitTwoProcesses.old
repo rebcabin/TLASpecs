@@ -1,6 +1,6 @@
 ------------------------- MODULE OneBitTwoProcesses -------------------------
-
 EXTENDS Integers
+
 (******************************************************************
 --algorithm OneBit 
   { variable x = [i \in {0,1} |-> FALSE] ;
@@ -80,21 +80,47 @@ f(self) == /\ pc[self] = "f"
            /\ x' = [x EXCEPT ![self] = FALSE]
            /\ pc' = [pc EXCEPT ![self] = "ncs"]
 
-P(self) == ncs(self) \/ e1(self) \/ e2(self) \/ cs(self) \/ e3(self)
-              \/ e4(self) \/ f(self)
+Proc(self) == ncs(self) \/ e1(self) \/ e2(self) \/ cs(self) \/ e3(self)
+                 \/ e4(self) \/ f(self)
 
-Next == (\E self \in {0,1}: P(self))
+Next == (\E self \in {0,1}: Proc(self))
 
 Spec == /\ Init /\ [][Next]_vars
-        /\ \A self \in {0,1} : WF_vars(P(self))
+        /\ \A self \in {0,1} : WF_vars(Proc(self))
 
 \* END TRANSLATION
+
+(*
+
+Question 7.6
+
+Analyzing weak fairness:
+Candidate Definition 1:
+Action A is weakly fair in behavior B if 
+
+~\E suffix of B : \A state \in B A is enabled /\ ~\E A step. 
+<=> 
+\A suffix of B : (\E state \in B : A is disabled) \/ (\E A step).
+
+we define <<A>>_vars as a non-stuttering step: a step that changes
+at least one of the variables in "vars." 
+
+WF_vars(A) is satisfied by behavior B if every suffix of B has 
+either a non-stuttering <<A>>_vars step or at least one state where
+<<A>>_vars is disabled.
+
+<<Proc(i)>>_vars is a non-stuttering step and it's disabled for every
+suffix of a deadlocked behavior because there does not exist a non-
+stuttering action of Proc(i). Therefore, Proc(i) is weakly fair for 
+the deadlocked behavior.
+
+*)
 
 PC0Labels   == {"ncs", "f", "e1", "e2", "cs"}
 ExtraLabels == {"e3", "e4"}
 PC1Labels   == PC0Labels \cup ExtraLabels
 
-TypeOK == \* /\ pc[0] \in PC0Labels
+TypeOK == \* /\ pc[0] \in PC0Labels (* Does not define pc *)
           \* /\ pc[1] \in PC1Labels
           \* pc \in [{0, 1} -> PC0Labels] (* Does not work; don't know why not *) 
           /\ pc \in [{0, 1} -> {"ncs", "f", "e1", "e2", "e3", "e4", "cs"}]
@@ -107,7 +133,8 @@ MutualExclusion == ~(InCS(0) /\ InCS(1))
 Inv == /\ TypeOK
        /\ MutualExclusion
        /\ pc[0] \notin {"e3", "e4"}
-       /\ \A i \in {0, 1} : InCS(i) \/ (pc[i] = "e2") => x[i]
+       /\ \A i \in {0,1} : WF_vars(Proc(i))
+       /\ \A i \in {0,1} : InCS(i) \/ (pc[i] = "e2") => x[i]
        
 ISpec == Inv /\ [][Next]_<<x, pc>>
 
@@ -135,5 +162,5 @@ Trying == /\ pc[0] \in {"e1", "e2"}
 DeadlockFree == Trying ~> (InCS(0) \/ InCS(1))
 =============================================================================
 \* Modification History
-\* Last modified Fri Feb 21 11:27:07 PST 2014 by bbeckman
+\* Last modified Fri Feb 21 19:14:58 PST 2014 by bbeckman
 \* Created Thu Feb 20 13:10:58 PST 2014 by bbeckman
