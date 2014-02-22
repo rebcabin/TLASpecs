@@ -123,6 +123,8 @@ PC1Labels   == PC0Labels \cup ExtraLabels
 TypeOK == \* /\ pc[0] \in PC0Labels (* Does not define pc *)
           \* /\ pc[1] \in PC1Labels
           \* pc \in [{0, 1} -> PC0Labels] (* Does not work; don't know why not *) 
+          (* I would like to have a more precise TypeOK, but don't know how 
+             to write it. My more precise one would not let pc be "e3" or "e4." *)
           /\ pc \in [{0, 1} -> {"ncs", "f", "e1", "e2", "e3", "e4", "cs"}]
           /\ x  \in [{0, 1} -> BOOLEAN]
           
@@ -130,7 +132,8 @@ InCS(i) == pc[i] = "cs"
 
 MutualExclusion == ~(InCS(0) /\ InCS(1))
 
-Inv == /\ TypeOK
+Inv == /\ Init 
+       /\ TypeOK
        /\ MutualExclusion
        /\ pc[0] \notin {"e3", "e4"}
        /\ \A i \in {0,1} : WF_vars(Proc(i))
@@ -138,11 +141,10 @@ Inv == /\ TypeOK
        
 ISpec == Inv /\ [][Next]_<<x, pc>>
 
-(* If we check ISpec
-   in this algorithm and only Spec in that protocol, the checker
-   will generate states that cannot be properly mapped to protocol
-   states, such as this one: 
-   
+(* If we check ISpec in this algorithm and only Spec in that protocol, 
+   the checker will generate states that cannot be properly mapped to
+   protocol states, such as this one: 
+
    Property line 134, col 12 to line 134, col 42 of module 
    OneBitProtocol is violated by the initial state:
      /\ x = (0 :> FALSE @@ 1 :> FALSE)
@@ -156,11 +158,13 @@ A == INSTANCE OneBitProtocol
      WITH pc <- [i \in {0, 1} |-> 
        IF pc[i] \in {"ncs", "f"} THEN "r" ELSE pc[i]]
 
-Trying == /\ pc[0] \in {"e1", "e2"}
-          /\ pc[1] \in {"e1", "e2"}
+\* Trying == /\ pc[0] \in {"e1", "e2"}
+\*           /\ pc[1] \in {"e1", "e2"}
+          
+Trying(i) == pc[i] \in {"e1", "e2"}          
              
-DeadlockFree == Trying ~> (InCS(0) \/ InCS(1))
+DeadlockFree == (Trying(0) \/ Trying(1)) ~> (InCS(0) \/ InCS(1))
 =============================================================================
 \* Modification History
-\* Last modified Fri Feb 21 19:22:34 PST 2014 by bbeckman
+\* Last modified Fri Feb 21 19:44:17 PST 2014 by bbeckman
 \* Created Thu Feb 20 13:10:58 PST 2014 by bbeckman
