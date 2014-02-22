@@ -124,7 +124,9 @@ TypeOK == \* /\ pc[0] \in PC0Labels (* Does not define pc *)
           \* /\ pc[1] \in PC1Labels
           \* pc \in [{0, 1} -> PC0Labels] (* Does not work; don't know why not *) 
           (* I would like to have a more precise TypeOK, but don't know how 
-             to write it. My more precise one would not let pc be "e3" or "e4." *)
+             to write it. My more precise one would not let pc be "e3" or "e4." 
+             The hyperbook's solution is to add a conjunct to the inductive
+             invariant that prevents this case (see "Inv" below). *)
           /\ pc \in [{0, 1} -> {"ncs", "f", "e1", "e2", "e3", "e4", "cs"}]
           /\ x  \in [{0, 1} -> BOOLEAN]
           
@@ -166,5 +168,5 @@ Trying(i) == pc[i] \in {"e1", "e2"}
 DeadlockFree == (Trying(0) \/ Trying(1)) ~> (InCS(0) \/ InCS(1))
 =============================================================================
 \* Modification History
-\* Last modified Fri Feb 21 19:44:17 PST 2014 by bbeckman
+\* Last modified Fri Feb 21 19:48:24 PST 2014 by bbeckman
 \* Created Thu Feb 20 13:10:58 PST 2014 by bbeckman
