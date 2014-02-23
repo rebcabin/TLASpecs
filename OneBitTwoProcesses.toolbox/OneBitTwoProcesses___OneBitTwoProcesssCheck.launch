@@ -25,7 +25,7 @@
 </listAttribute>
 <listAttribute key="modelCorrectnessProperties">
 <listEntry value="0A!Spec"/>
-<listEntry value="0A!ISpec"/>
+<listEntry value="1A!ISpec"/>
 <listEntry value="0DeadlockFree"/>
 </listAttribute>
 <stringAttribute key="modelExpressionEval" value=""/>

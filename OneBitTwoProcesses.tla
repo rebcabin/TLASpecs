@@ -156,12 +156,12 @@ ISpec == Inv /\ [][Next]_<<x, pc>>
 *)
 A == INSTANCE OneBitProtocol 
      WITH pc <- [i \in {0, 1} |-> 
-       IF pc[i] \in {"ncs", "f"} THEN "r" ELSE pc[i]]
+       IF pc[i] \in {"ncs", "f", "e3", "e4"} THEN "r" ELSE pc[i]]
 
 \* Trying == /\ pc[0] \in {"e1", "e2"}
 \*           /\ pc[1] \in {"e1", "e2"}
           
 =============================================================================
 \* Modification History
-\* Last modified Sun Feb 23 10:02:53 PST 2014 by bbeckman
+\* Last modified Sun Feb 23 10:05:42 PST 2014 by bbeckman
 \* Created Thu Feb 20 13:10:58 PST 2014 by bbeckman
