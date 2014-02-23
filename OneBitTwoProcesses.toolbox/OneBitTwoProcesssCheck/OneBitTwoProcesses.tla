@@ -90,9 +90,7 @@ Spec == /\ Init /\ [][Next]_vars
 
 \* END TRANSLATION
 
-(*
-
-Question 7.6
+(* Question 7.6
 
 Analyzing weak fairness:
 Candidate Definition 1:
@@ -105,16 +103,16 @@ Action A is weakly fair in behavior B if
 we define <<A>>_vars as a non-stuttering step: a step that changes
 at least one of the variables in "vars." 
 
-WF_vars(A) is satisfied by behavior B if every suffix of B has 
-either a non-stuttering <<A>>_vars step or at least one state where
+WF_vars(A) is satisfied by behavior B if every suffix of B has either at
+least one non-stuttering <<A>>_vars step or at least one state where
 <<A>>_vars is disabled.
 
-<<Proc(i)>>_vars is a non-stuttering step and it's disabled for every
-suffix of a deadlocked behavior because there does not exist a non-
-stuttering action of Proc(i). Therefore, Proc(i) is weakly fair for 
-the deadlocked behavior.
-
+<<Proc(i)>>_vars is a non-stuttering step and we can find a deadlocked
+behavior with a suffix in which it's disabled because there does not
+exist a non-stuttering action of Proc(i). Therefore, Proc(i) is weakly
+fair for the deadlocked behavior.
 *)
+
 
 PC0Labels   == {"ncs", "f", "e1", "e2", "cs"}
 ExtraLabels == {"e3", "e4"}
@@ -141,27 +139,25 @@ Inv == /\ Init
        
 ISpec == Inv /\ [][Next]_<<x, pc>>
 
-(* If we check ISpec in this algorithm and only Spec in that protocol, 
-   the checker will generate states that cannot be properly mapped to
-   protocol states, such as this one: 
+(* If we check ISpec in this algorithm and only Spec in
+   "OneBitProtocol," the checker will generate algorithm states that
+   cannot be properly mapped to protocol states, such as this one:
 
    Property line 134, col 12 to line 134, col 42 of module 
    OneBitProtocol is violated by the initial state:
-     /\ x = (0 :> FALSE @@ 1 :> FALSE)
+     /\ x  = (0 :> FALSE @@ 1 :> FALSE)
      /\ pc = (0 :> "ncs" @@ 1 :> "e1")
      
    If we check Spec in this algorithm, we may check A!Spec or 
    A!ISpec or both in the protocol. If we check ISpec in this 
    algorithm, we may not check A!Spec in the protocol.   
 *)
+
 A == INSTANCE OneBitProtocol 
      WITH pc <- [i \in {0, 1} |-> 
        IF pc[i] \in {"ncs", "f", "e3", "e4"} THEN "r" ELSE pc[i]]
 
-\* Trying == /\ pc[0] \in {"e1", "e2"}
-\*           /\ pc[1] \in {"e1", "e2"}
-          
 =============================================================================
 \* Modification History
-\* Last modified Sun Feb 23 10:05:42 PST 2014 by bbeckman
+\* Last modified Sun Feb 23 10:23:58 PST 2014 by bbeckman
 \* Created Thu Feb 20 13:10:58 PST 2014 by bbeckman
