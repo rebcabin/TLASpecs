@@ -120,26 +120,24 @@ PC0Labels   == {"ncs", "f", "e1", "e2", "cs"}
 ExtraLabels == {"e3", "e4"}
 PC1Labels   == PC0Labels \cup ExtraLabels
 
-TypeOK == \* /\ pc[0] \in PC0Labels (* Does not define pc *)
-          \* /\ pc[1] \in PC1Labels
-          \* pc \in [{0, 1} -> PC0Labels] (* Does not work; don't know why not *) 
-          (* I would like to have a more precise TypeOK, but don't know how 
-             to write it. My more precise one would not let pc be "e3" or "e4." 
-             The hyperbook's solution is to add a conjunct to the inductive
-             invariant that prevents this case (see "Inv" below). *)
-          /\ pc \in [{0, 1} -> {"ncs", "f", "e1", "e2", "e3", "e4", "cs"}]
+TypeOK == /\ pc \in [{0} -> PC0Labels] \cup [{1} -> PC1Labels]
           /\ x  \in [{0, 1} -> BOOLEAN]
           
 InCS(i) == pc[i] = "cs"
 
 MutualExclusion == ~(InCS(0) /\ InCS(1))
+Fairness        == \A i \in {0,1} : WF_vars(Proc(i))
+Coordination    == \A i \in {0,1} : InCS(i) \/ (pc[i] = "e2") => x[i]
+
+Trying(i)       == pc[i] \in {"e1", "e2"}          
+DeadlockFreedom == (Trying(0) \/ Trying(1)) ~> (InCS(0) \/ InCS(1))
 
 Inv == /\ Init 
        /\ TypeOK
        /\ MutualExclusion
-       /\ pc[0] \notin {"e3", "e4"}
-       /\ \A i \in {0,1} : WF_vars(Proc(i))
-       /\ \A i \in {0,1} : InCS(i) \/ (pc[i] = "e2") => x[i]
+       /\ Fairness
+       /\ Coordination
+       /\ DeadlockFreedom
        
 ISpec == Inv /\ [][Next]_<<x, pc>>
 
@@ -163,10 +161,7 @@ A == INSTANCE OneBitProtocol
 \* Trying == /\ pc[0] \in {"e1", "e2"}
 \*           /\ pc[1] \in {"e1", "e2"}
           
-Trying(i) == pc[i] \in {"e1", "e2"}          
-             
-DeadlockFree == (Trying(0) \/ Trying(1)) ~> (InCS(0) \/ InCS(1))
 =============================================================================
 \* Modification History
-\* Last modified Fri Feb 21 19:48:24 PST 2014 by bbeckman
+\* Last modified Sun Feb 23 10:02:53 PST 2014 by bbeckman
 \* Created Thu Feb 20 13:10:58 PST 2014 by bbeckman
