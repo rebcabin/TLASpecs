@@ -27,7 +27,7 @@ Semantic processing of module MC
 SANY finished.
 @!@!@ENDMSG 2219 @!@!@
 @!@!@STARTMSG 2185:0 @!@!@
-Starting... (2014-02-23 11:30:41)
+Starting... (2014-02-23 16:04:28)
 @!@!@ENDMSG 2185 @!@!@
 @!@!@STARTMSG 2212:0 @!@!@
 Implied-temporal checking--satisfiability problem has 1 branches.
@@ -49,7 +49,7 @@ Model checking completed. No error has been found.
   based on the actual fingerprints:  val = 1.1E-15
 @!@!@ENDMSG 2193 @!@!@
 @!@!@STARTMSG 2201:0 @!@!@
-The coverage statistics at 2014-02-23 11:30:41
+The coverage statistics at 2014-02-23 16:04:29
 @!@!@ENDMSG 2201 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
   line 46, col 17 to line 46, col 48 of module OneBitTwoProcessesM2: 12
@@ -103,7 +103,7 @@ The coverage statistics at 2014-02-23 11:30:41
 End of statistics.
 @!@!@ENDMSG 2202 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(11) at 2014-02-23 11:30:41: 60 states generated (12080 s/min), 31 distinct states found (6241 ds/min), 0 states left on queue.
+Progress(11) at 2014-02-23 16:04:29: 60 states generated (13793 s/min), 31 distinct states found (7126 ds/min), 0 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2199:0 @!@!@
 60 states generated, 31 distinct states found, 0 states left on queue.
@@ -112,5 +112,5 @@ Progress(11) at 2014-02-23 11:30:41: 60 states generated (12080 s/min), 31 disti
 The depth of the complete state graph search is 11.
 @!@!@ENDMSG 2194 @!@!@
 @!@!@STARTMSG 2186:0 @!@!@
-Finished. (2014-02-23 11:30:41)
+Finished. (2014-02-23 16:04:29)
 @!@!@ENDMSG 2186 @!@!@

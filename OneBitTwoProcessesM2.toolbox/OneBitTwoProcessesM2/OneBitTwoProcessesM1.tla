@@ -5,7 +5,7 @@ EXTENDS Integers
 --algorithm OneBitM1 
   { variable x = [i \in {0,1} |-> FALSE] ;
     fair process (Proc \in {0,1})
-    { ncs: while (TRUE)
+    { ncs:- while (TRUE)
                  \* This is the model for my non-critical processing.
            {     skip ; 
              \* Ok, I'm done with that and I want in to the 
@@ -85,7 +85,7 @@ Proc(self) == ncs(self) \/ e1(self) \/ e2(self) \/ cs(self) \/ e3(self)
 Next == (\E self \in {0,1}: Proc(self))
 
 Spec == /\ Init /\ [][Next]_vars
-        /\ \A self \in {0,1} : WF_vars(Proc(self))
+        /\ \A self \in {0,1} : WF_vars((pc[self] # "ncs") /\ Proc(self))
 
 \* END TRANSLATION
 
@@ -96,5 +96,5 @@ A == INSTANCE OneBitProtocol
 \* Other == INSTANCE OneBitTwoProcessesM2 WITH x <-x, pc <- pc
 =============================================================================
 \* Modification History
-\* Last modified Sun Feb 23 11:29:48 PST 2014 by bbeckman
+\* Last modified Sun Feb 23 16:03:54 PST 2014 by bbeckman
 \* Created Sun Feb 23 10:40:36 PST 2014 by bbeckman

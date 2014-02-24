@@ -5,7 +5,7 @@ EXTENDS Integers
 --algorithm OneBitM1 
   { variable x = [i \in {0,1} |-> FALSE] ;
     fair process (Proc \in {0,1})
-    { ncs: while (TRUE)
+    { ncs:- while (TRUE)
                  \* This is the model for my non-critical processing.
            {     skip ; 
              \* Ok, I'm done with that and I want in to the 
@@ -90,9 +90,9 @@ A == INSTANCE OneBitProtocol
      WITH pc <- [i \in {0, 1} |-> 
        IF pc[i] \in {"ncs", "f", "e3", "e4"} THEN "r" ELSE pc[i]]
 
-\* Other == INSTANCE OneBitTwoProcessesM1 WITH pc <- pc, x <- x
+Other == INSTANCE OneBitTwoProcessesM1 WITH pc <- pc, x <- x
 
 =============================================================================
 \* Modification History
-\* Last modified Sun Feb 23 10:50:08 PST 2014 by bbeckman
+\* Last modified Sun Feb 23 16:03:31 PST 2014 by bbeckman
 \* Created Sun Feb 23 10:44:51 PST 2014 by bbeckman
