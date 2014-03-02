@@ -25,7 +25,7 @@ Semantic processing of module MC
 SANY finished.
 @!@!@ENDMSG 2219 @!@!@
 @!@!@STARTMSG 2185:0 @!@!@
-Starting... (2014-02-23 10:24:07)
+Starting... (2014-02-25 11:00:26)
 @!@!@ENDMSG 2185 @!@!@
 @!@!@STARTMSG 2189:0 @!@!@
 Computing initial states...
@@ -40,65 +40,8 @@ Model checking completed. No error has been found.
   calculated (optimistic):  val = 0.0
   based on the actual fingerprints:  val = 1.1E-19
 @!@!@ENDMSG 2193 @!@!@
-@!@!@STARTMSG 2201:0 @!@!@
-The coverage statistics at 2014-02-23 10:24:07
-@!@!@ENDMSG 2201 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 48, col 17 to line 48, col 48 of module OneBitTwoProcesses: 0
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 49, col 17 to line 49, col 22 of module OneBitTwoProcesses: 0
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 52, col 16 to line 52, col 45 of module OneBitTwoProcesses: 0
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 53, col 16 to line 53, col 47 of module OneBitTwoProcesses: 0
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 57, col 27 to line 57, col 58 of module OneBitTwoProcesses: 0
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 59, col 38 to line 59, col 69 of module OneBitTwoProcesses: 0
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 60, col 38 to line 60, col 69 of module OneBitTwoProcesses: 0
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 61, col 16 to line 61, col 21 of module OneBitTwoProcesses: 0
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 65, col 16 to line 65, col 46 of module OneBitTwoProcesses: 0
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 66, col 16 to line 66, col 21 of module OneBitTwoProcesses: 0
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 69, col 16 to line 69, col 43 of module OneBitTwoProcesses: 0
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 70, col 16 to line 70, col 47 of module OneBitTwoProcesses: 0
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 27 to line 75, col 58 of module OneBitTwoProcesses: 0
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 76, col 27 to line 76, col 58 of module OneBitTwoProcesses: 0
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 77, col 16 to line 77, col 21 of module OneBitTwoProcesses: 0
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 80, col 15 to line 80, col 45 of module OneBitTwoProcesses: 0
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 81, col 15 to line 81, col 47 of module OneBitTwoProcesses: 0
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2202:0 @!@!@
-End of statistics.
-@!@!@ENDMSG 2202 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(0) at 2014-02-23 10:24:07: 0 states generated (0 s/min), 0 distinct states found (0 ds/min), 0 states left on queue.
+Progress(0) at 2014-02-25 11:00:26: 0 states generated (0 s/min), 0 distinct states found (0 ds/min), 0 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2199:0 @!@!@
 0 states generated, 0 distinct states found, 0 states left on queue.
@@ -107,5 +50,5 @@ Progress(0) at 2014-02-23 10:24:07: 0 states generated (0 s/min), 0 distinct sta
 The depth of the complete state graph search is 0.
 @!@!@ENDMSG 2194 @!@!@
 @!@!@STARTMSG 2186:0 @!@!@
-Finished. (2014-02-23 10:24:07)
+Finished. (2014-02-25 11:00:26)
 @!@!@ENDMSG 2186 @!@!@

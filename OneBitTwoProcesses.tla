@@ -137,7 +137,7 @@ Inv == /\ Init
        /\ Coordination
        /\ DeadlockFreedom
        
-ISpec == Inv /\ [][Next]_<<x, pc>>
+ISpec == Init /\ [][Next]_<<x, pc>> /\ Fairness
 
 (* If we check ISpec in this algorithm and only Spec in
    "OneBitProtocol," the checker will generate algorithm states that
@@ -159,5 +159,5 @@ A == INSTANCE OneBitProtocol
 
 =============================================================================
 \* Modification History
-\* Last modified Sun Feb 23 10:23:58 PST 2014 by bbeckman
+\* Last modified Tue Feb 25 10:42:55 PST 2014 by bbeckman
 \* Created Thu Feb 20 13:10:58 PST 2014 by bbeckman

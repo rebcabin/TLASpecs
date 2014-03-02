@@ -25,7 +25,7 @@ Semantic processing of module MC
 SANY finished.
 @!@!@ENDMSG 2219 @!@!@
 @!@!@STARTMSG 2185:0 @!@!@
-Starting... (2014-02-14 18:18:09)
+Starting... (2014-02-25 14:33:13)
 @!@!@ENDMSG 2185 @!@!@
 @!@!@STARTMSG 2212:0 @!@!@
 Implied-temporal checking--satisfiability problem has 1 branches.
@@ -37,7 +37,13 @@ Computing initial states...
 Finished computing initial states: 10000 distinct states generated.
 @!@!@ENDMSG 2190 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(9) at 2014-02-14 18:18:13: 80462 states generated (80462 s/min), 79204 distinct states found (79204 ds/min), 8741 states left on queue.
+Progress(2) at 2014-02-25 14:33:17: 19597 states generated (19597 s/min), 19597 distinct states found (19597 ds/min), 10000 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(22) at 2014-02-25 14:34:17: 194499 states generated (174902 s/min), 190807 distinct states found (171210 ds/min), 6304 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(196) at 2014-02-25 14:35:17: 300830 states generated (106331 s/min), 290842 distinct states found (100035 ds/min), 12 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2192:0 @!@!@
 Checking temporal properties for the complete state space...
@@ -46,11 +52,11 @@ Checking temporal properties for the complete state space...
 Model checking completed. No error has been found.
   Estimates of the probability that TLC did not check all reachable states
   because two distinct states had the same fingerprint:
-  calculated (optimistic):  val = 8.4E-11
-  based on the actual fingerprints:  val = 1.9E-10
+  calculated (optimistic):  val = 1.6E-10
+  based on the actual fingerprints:  val = 6.4E-8
 @!@!@ENDMSG 2193 @!@!@
 @!@!@STARTMSG 2201:0 @!@!@
-The coverage statistics at 2014-02-14 18:18:23
+The coverage statistics at 2014-02-25 14:35:21
 @!@!@ENDMSG 2201 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
   line 25, col 12 to line 25, col 12 of module Euclid: 10000
@@ -68,47 +74,68 @@ The coverage statistics at 2014-02-14 18:18:23
   line 25, col 26 to line 25, col 27 of module Euclid: 10000
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 37, col 35 to line 37, col 44 of module Euclid: 67718
+  line 37, col 40 to line 37, col 60 of module Euclid: 67718
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 38, col 35 to line 38, col 40 of module Euclid: 67718
+  line 38, col 40 to line 38, col 60 of module Euclid: 67718
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 39, col 35 to line 39, col 44 of module Euclid: 67718
+  line 41, col 29 to line 41, col 40 of module Euclid: 10000
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 40, col 35 to line 40, col 40 of module Euclid: 67718
+  line 42, col 31 to line 42, col 31 of module Euclid: 145436
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 41, col 24 to line 41, col 36 of module Euclid: 135436
+  line 42, col 34 to line 42, col 34 of module Euclid: 145436
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 44, col 24 to line 44, col 35 of module Euclid: 10000
+  line 42, col 37 to line 42, col 38 of module Euclid: 145436
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 45, col 37 to line 45, col 37 of module Euclid: 10000
+  line 42, col 41 to line 42, col 42 of module Euclid: 145436
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 45, col 40 to line 45, col 40 of module Euclid: 10000
+  line 45, col 21 to line 45, col 30 of module Euclid: 67718
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 46, col 26 to line 46, col 27 of module Euclid: 145436
+  line 46, col 21 to line 46, col 38 of module Euclid: 67718
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 46, col 30 to line 46, col 31 of module Euclid: 145436
+  line 47, col 34 to line 47, col 34 of module Euclid: 67718
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 47, col 37 to line 47, col 38 of module Euclid: 67718
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 47, col 41 to line 47, col 42 of module Euclid: 67718
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 50, col 21 to line 50, col 30 of module Euclid: 67718
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 51, col 21 to line 51, col 38 of module Euclid: 67718
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 52, col 34 to line 52, col 34 of module Euclid: 67718
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 52, col 37 to line 52, col 38 of module Euclid: 67718
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 52, col 41 to line 52, col 42 of module Euclid: 67718
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2202:0 @!@!@
 End of statistics.
 @!@!@ENDMSG 2202 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(101) at 2014-02-14 18:18:23: 165436 states generated (723797 s/min), 155436 distinct states found (680046 ds/min), 0 states left on queue.
+Progress(200) at 2014-02-25 14:35:21: 300872 states generated (141820 s/min), 290872 distinct states found (137106 ds/min), 0 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2199:0 @!@!@
-165436 states generated, 155436 distinct states found, 0 states left on queue.
+300872 states generated, 290872 distinct states found, 0 states left on queue.
 @!@!@ENDMSG 2199 @!@!@
 @!@!@STARTMSG 2194:0 @!@!@
-The depth of the complete state graph search is 101.
+The depth of the complete state graph search is 200.
 @!@!@ENDMSG 2194 @!@!@
 @!@!@STARTMSG 2186:0 @!@!@
-Finished. (2014-02-14 18:18:23)
+Finished. (2014-02-25 14:35:21)
 @!@!@ENDMSG 2186 @!@!@

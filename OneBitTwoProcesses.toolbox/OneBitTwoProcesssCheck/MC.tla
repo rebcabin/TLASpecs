@@ -1,14 +1,22 @@
 ---- MODULE MC ----
 EXTENDS OneBitTwoProcesses, TLC
 
-\* SPECIFICATION definition @modelBehaviorSpec:0
-spec_13931798469411054000 ==
-ISpec
+\* INIT definition @modelBehaviorInit:0
+init_139336540215188000 ==
+Init
+----
+\* NEXT definition @modelBehaviorNext:0
+next_139336540216289000 ==
+Next
 ----
 \* PROPERTY definition @modelCorrectnessProperties:0
-prop_13931798469521055000 ==
+prop_139336540217390000 ==
 A!ISpec
+----
+\* PROPERTY definition @modelCorrectnessProperties:1
+prop_139336540218491000 ==
+Fairness
 ----
 =============================================================================
 \* Modification History
-\* Created Sun Feb 23 10:24:06 PST 2014 by bbeckman
+\* Created Tue Feb 25 13:56:42 PST 2014 by bbeckman
