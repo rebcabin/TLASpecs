@@ -21,12 +21,13 @@
 <booleanAttribute key="modelCorrectnessCheckDeadlock" value="true"/>
 <listAttribute key="modelCorrectnessInvariants"/>
 <listAttribute key="modelCorrectnessProperties"/>
-<stringAttribute key="modelExpressionEval" value="GCD(42*83, 42*94)"/>
+<stringAttribute key="modelExpressionEval" value="&lt;&lt;GCD1, GCD2, GCD3&gt;&gt;"/>
 <stringAttribute key="modelParameterActionConstraint" value=""/>
 <listAttribute key="modelParameterConstants"/>
 <stringAttribute key="modelParameterContraint" value=""/>
 <listAttribute key="modelParameterDefinitions">
-<listEntry value="Int;;-1000..1000;0;0"/>
+<listEntry value="Int;;-100..100;0;0"/>
+<listEntry value="Nat;;0..15;0;0"/>
 </listAttribute>
 <stringAttribute key="modelParameterModelValues" value="{}"/>
 <stringAttribute key="modelParameterNewDefinitions" value=""/>

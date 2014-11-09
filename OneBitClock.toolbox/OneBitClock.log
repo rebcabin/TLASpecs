@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/MacPorts 2012_5) (format=pdflatex 2013.2.24)  14 FEB 2014 07:01
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/MacPorts 2012_5) (format=pdflatex 2013.2.24)  17 FEB 2014 09:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -80,8 +80,7 @@ Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks14
 \verbatim@line=\toks15
 \verbatim@in@stream=\read1
-)
-No file OneBitClock.aux.
+) (./OneBitClock.aux)
 \openout1 = `OneBitClock.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 939.
@@ -118,45 +117,36 @@ LaTeX Font Info:    Try loading font information for U+lasy on input line 942.
 (/opt/local/share/texmf-texlive-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-\%{2}{1}{21.81519pt}
-\%{2}{2}{40.70383pt}
-\%{3}{1}{25.94293pt}
-\%{3}{2}{44.83157pt}
-\%{3}{3}{55.9426pt}
-\%{3}{4}{67.05362pt}
-\%{3}{6}{76.1737pt}
-\%{3}{7}{89.50693pt}
-\%{4}{1}{11.11102pt}
-\%{4}{4}{23.03667pt}
-\%{4}{5}{36.36989pt}
-\%{5}{1}{11.11102pt}
-\%{5}{2}{22.22205pt}
-\%{5}{4}{31.34213pt}
-\%{6}{1}{11.11102pt}
-\%{6}{4}{23.03667pt}
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 969.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 969.
 [1
 
 {/opt/local/var/db/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./OneBitClock.au
 x) ) 
 Here is how much of TeX's memory you used:
- 1262 strings out of 494763
- 15617 string characters out of 3171442
- 68066 words of memory out of 3000000
- 4535 multiletter control sequences out of 15000+200000
- 5769 words of font info for 23 fonts, out of 3000000 for 9000
+ 1285 strings out of 494763
+ 15854 string characters out of 3171442
+ 71066 words of memory out of 3000000
+ 4547 multiletter control sequences out of 15000+200000
+ 8505 words of font info for 33 fonts, out of 3000000 for 9000
  134 hyphenation exceptions out of 8191
- 23i,11n,19p,236b,113s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 23i,10n,25p,236b,250s stack positions out of 5000i,500n,10000p,200000b,50000s
 </opt/local/share/texmf-texlive-dist/fonts/type1/public/amsfonts/cm/cmcsc10
+.pfb></opt/local/share/texmf-texlive-dist/fonts/type1/public/amsfonts/cm/cmmi10
 .pfb></opt/local/share/texmf-texlive-dist/fonts/type1/public/amsfonts/cm/cmr10.
 pfb></opt/local/share/texmf-texlive-dist/fonts/type1/public/amsfonts/cm/cmr5.pf
-b></opt/local/share/texmf-texlive-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
-b></opt/local/share/texmf-texlive-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
-></opt/local/share/texmf-texlive-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
->
-Output written on OneBitClock.pdf (1 page, 50764 bytes).
+b></opt/local/share/texmf-texlive-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
+</opt/local/share/texmf-texlive-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+</opt/local/share/texmf-texlive-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><
+/opt/local/share/texmf-texlive-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></
+opt/local/share/texmf-texlive-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></
+opt/local/share/texmf-texlive-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
+Output written on OneBitClock.pdf (1 page, 95539 bytes).
 PDF statistics:
- 32 PDF objects out of 1000 (max. 8388607)
- 22 compressed objects within 1 object stream
+ 48 PDF objects out of 1000 (max. 8388607)
+ 34 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

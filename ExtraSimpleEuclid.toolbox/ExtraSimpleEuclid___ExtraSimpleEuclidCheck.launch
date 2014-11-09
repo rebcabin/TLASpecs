@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.lamport.tla.toolbox.tool.tlc.modelCheck">
+<stringAttribute key="TLCCmdLineParameters" value=""/>
+<intAttribute key="autoLockTime" value="15"/>
+<stringAttribute key="configurationName" value="ExtraSimpleEuclidCheck"/>
+<intAttribute key="dfidDepth" value="100"/>
+<booleanAttribute key="dfidMode" value="false"/>
+<booleanAttribute key="distributedTLC" value="false"/>
+<stringAttribute key="distributedTLCScript" value=""/>
+<stringAttribute key="distributedTLCVMArgs" value=""/>
+<intAttribute key="fpBits" value="0"/>
+<intAttribute key="fpIndex" value="1"/>
+<intAttribute key="maxHeapSize" value="25"/>
+<intAttribute key="maxSetSize" value="1000000"/>
+<booleanAttribute key="mcMode" value="true"/>
+<stringAttribute key="modelBehaviorInit" value=""/>
+<stringAttribute key="modelBehaviorNext" value=""/>
+<stringAttribute key="modelBehaviorSpec" value="Specl2"/>
+<intAttribute key="modelBehaviorSpecType" value="1"/>
+<stringAttribute key="modelBehaviorVars" value="x, y, pc"/>
+<booleanAttribute key="modelCorrectnessCheckDeadlock" value="true"/>
+<listAttribute key="modelCorrectnessInvariants">
+<listEntry value="0&lt;&lt;I1, I2, I3&gt;&gt;"/>
+<listEntry value="0&lt;&lt;I2, I3&gt;&gt;"/>
+<listEntry value="0PC"/>
+<listEntry value="1Inv"/>
+<listEntry value="1InductiveInv"/>
+<listEntry value="0I1"/>
+<listEntry value="0I2"/>
+<listEntry value="0I3"/>
+<listEntry value="0&lt;&lt;L1, L2&gt;&gt;"/>
+</listAttribute>
+<listAttribute key="modelCorrectnessProperties">
+<listEntry value="1Termination"/>
+</listAttribute>
+<stringAttribute key="modelExpressionEval" value=""/>
+<stringAttribute key="modelParameterActionConstraint" value=""/>
+<listAttribute key="modelParameterConstants">
+<listEntry value="M;;30;0;0"/>
+<listEntry value="N;;18;0;0"/>
+</listAttribute>
+<stringAttribute key="modelParameterContraint" value=""/>
+<listAttribute key="modelParameterDefinitions">
+<listEntry value="Int;;-100..100;0;0"/>
+</listAttribute>
+<stringAttribute key="modelParameterModelValues" value="{}"/>
+<stringAttribute key="modelParameterNewDefinitions" value=""/>
+<stringAttribute key="modelPropertiesExpand" value=""/>
+<intAttribute key="numberOfWorkers" value="4"/>
+<booleanAttribute key="recover" value="false"/>
+<intAttribute key="simuAril" value="-1"/>
+<intAttribute key="simuDepth" value="100"/>
+<intAttribute key="simuSeed" value="-1"/>
+<stringAttribute key="specName" value="ExtraSimpleEuclid"/>
+<stringAttribute key="view" value=""/>
+</launchConfiguration>

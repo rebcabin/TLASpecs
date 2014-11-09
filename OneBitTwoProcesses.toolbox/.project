@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>OneBitTwoProcesses</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>toolbox.builder.TLAParserBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>toolbox.builder.PCalAlgorithmSearchingBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>toolbox.natures.TLANature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>OneBitProtocol.tla</name>
+			<type>1</type>
+			<location>/Users/bbeckman/Documents/TLASpecs/OneBitProtocol.tla</location>
+		</link>
+		<link>
+			<name>OneBitTwoProcesses.tla</name>
+			<type>1</type>
+			<location>/Users/bbeckman/Documents/TLASpecs/OneBitTwoProcesses.tla</location>
+		</link>
+		<link>
+			<name>OneBitTwoProcesses002.tla</name>
+			<type>1</type>
+			<location>/Users/bbeckman/Documents/TLASpecs/OneBitTwoProcesses002.tla</location>
+		</link>
+	</linkedResources>
+</projectDescription>

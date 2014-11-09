@@ -939,18 +939,44 @@
 \begin{document}
 \tlatex
 \setboolean{shading}{true}
-\fl{}\moduleLeftDash\cl{ {\MODULE} OneBitClock}\moduleRightDash\cl{}
-\fl{ {\VARIABLE} b}
- \fl{ Init1}\al{2}{1}{ \.{\defeq}}\al{2}{2}{ ( b \.{=} 0 ) \.{\lor} ( b \.{=}
- 1 )}
- \fl{ Next1}\al{3}{1}{ \.{\defeq}}\al{3}{2}{ \.{\lor}}\al{3}{3}{
- \.{\land}}\al{3}{4}{ ( b}\al{3}{6}{ \.{=}}\al{3}{7}{ 0 )}
-\fl{ \.{\land}}\al{4}{1}{ ( b \.{'}}\al{4}{4}{ \.{=}}\al{4}{5}{ 1 )}
-\fl{ \.{\lor}}\al{5}{1}{ \.{\land}}\al{5}{2}{ ( b}\al{5}{4}{ \.{=} 1 )}
-\fl{ \.{\land}}\al{6}{1}{ ( b \.{'}}\al{6}{4}{ \.{=} 0 )}
-\fl{}
-\fl{}\bottombar\cl{}
-\fl{}
-\fl{}
-\fl{}
+\@x{}\moduleLeftDash\@xx{ {\MODULE} OneBitClock}\moduleRightDash\@xx{}%
+\@x{ {\EXTENDS} Integers}%
+\@pvspace{8.0pt}%
+\@x{ {\VARIABLE} b}%
+\@pvspace{8.0pt}%
+\@x{ TypeOK \.{\defeq} b \.{\in} \{ 0 ,\, 1 \}}%
+\@pvspace{8.0pt}%
+\@x{ Init1\@s{4.12} \.{\defeq} ( b\@s{7.42} \.{=} 0 ) \.{\lor} ( b \.{=} 1 )}%
+\@pvspace{8.0pt}%
+\@x{ Next3 \.{\defeq} b \.{'}\@s{8.50} \.{=} ( b \.{+} 1 ) \.{\%} 2}%
+\@pvspace{8.0pt}%
+ \@x{ Next2 \.{\defeq} b \.{'}\@s{8.50} \.{=} {\IF} b \.{=} 0 \.{\THEN} 1
+ \.{\ELSE} 0}%
+\@pvspace{8.0pt}%
+ \@x{ Next4 \.{\defeq} \.{\land} ( b \.{=} 0 ) \.{\implies} ( b \.{'} \.{=} 1
+ )}%
+\@x{\@s{44.83} \.{\land} ( b \.{=} 1 ) \.{\implies} ( b \.{'} \.{=} 0 )}%
+\@pvspace{8.0pt}%
+\@x{ Next1 \.{\defeq} \.{\lor} \.{\land} ( b\@s{4.1} \.{=} 0 )}%
+\@x{\@s{55.94} \.{\land} ( b \.{'}\@s{1.29} \.{=} 1 )}%
+\@x{\@s{44.83} \.{\lor} \.{\land} ( b\@s{4.09} \.{=} 1 )}%
+\@x{\@s{55.94} \.{\land} ( b \.{'}\@s{1.29} \.{=} 0 )}%
+\@pvspace{8.0pt}%
+\@x{}\bottombar\@xx{}%
+\setboolean{shading}{false}
+\begin{lcom}{0}%
+\begin{cpar}{0}{F}{F}{0}{0}{}%
+\ensuremath{\.{\,\backslash\,}}* Modification History
+\end{cpar}%
+\begin{cpar}{0}{F}{F}{0}{0}{}%
+ \ensuremath{\.{\,\backslash\,}}* Last modified Sun \ensuremath{Feb} 16
+ 08:51:04 \ensuremath{PST} 2014 by \ensuremath{bbeckman
+}%
+\end{cpar}%
+\begin{cpar}{0}{F}{F}{0}{0}{}%
+ \ensuremath{\.{\,\backslash\,}}* Created \ensuremath{Fri} \ensuremath{Feb} 14
+ 06:47:02 \ensuremath{PST} 2014 by \ensuremath{bbeckman
+}%
+\end{cpar}%
+\end{lcom}%
 \end{document}

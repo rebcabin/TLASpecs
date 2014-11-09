@@ -23,7 +23,7 @@ Semantic processing of module MC
 SANY finished.
 @!@!@ENDMSG 2219 @!@!@
 @!@!@STARTMSG 2185:0 @!@!@
-Starting... (2014-02-14 09:00:12)
+Starting... (2014-02-16 09:30:54)
 @!@!@ENDMSG 2185 @!@!@
 @!@!@STARTMSG 2189:0 @!@!@
 Computing initial states...
@@ -32,7 +32,7 @@ Computing initial states...
 Finished computing initial states: 1 distinct state generated.
 @!@!@ENDMSG 2190 @!@!@
 @!@!@STARTMSG 2110:1 @!@!@
-Invariant inv_139239721253065000 is violated.
+Invariant inv_139257185447027000 is violated.
 @!@!@ENDMSG 2110 @!@!@
 @!@!@STARTMSG 2121:1 @!@!@
 The behavior up to this point is:
@@ -50,7 +50,7 @@ The behavior up to this point is:
 
 @!@!@ENDMSG 2217 @!@!@
 @!@!@STARTMSG 2217:4 @!@!@
-3: <Action line 27, col 19 to line 28, col 44 of module DieHard>
+3: <Action line 37, col 19 to line 38, col 44 of module DieHard>
 /\ big = 2
 /\ small = 3
 
@@ -62,7 +62,7 @@ The behavior up to this point is:
 
 @!@!@ENDMSG 2217 @!@!@
 @!@!@STARTMSG 2217:4 @!@!@
-5: <Action line 27, col 19 to line 28, col 44 of module DieHard>
+5: <Action line 37, col 19 to line 38, col 44 of module DieHard>
 /\ big = 0
 /\ small = 2
 
@@ -74,13 +74,13 @@ The behavior up to this point is:
 
 @!@!@ENDMSG 2217 @!@!@
 @!@!@STARTMSG 2217:4 @!@!@
-7: <Action line 27, col 19 to line 28, col 44 of module DieHard>
+7: <Action line 37, col 19 to line 38, col 44 of module DieHard>
 /\ big = 4
 /\ small = 3
 
 @!@!@ENDMSG 2217 @!@!@
 @!@!@STARTMSG 2201:0 @!@!@
-The coverage statistics at 2014-02-14 09:00:13
+The coverage statistics at 2014-02-16 09:30:55
 @!@!@ENDMSG 2201 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
   line 11, col 17 to line 11, col 26 of module DieHard: 12
@@ -107,22 +107,22 @@ The coverage statistics at 2014-02-14 09:00:13
   line 18, col 29 to line 18, col 42 of module DieHard: 12
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 23, col 22 to line 23, col 44 of module DieHard: 12
+  line 33, col 22 to line 33, col 44 of module DieHard: 12
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 24, col 22 to line 24, col 44 of module DieHard: 12
+  line 34, col 22 to line 34, col 44 of module DieHard: 12
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 27, col 22 to line 27, col 44 of module DieHard: 12
+  line 37, col 22 to line 37, col 44 of module DieHard: 12
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 28, col 22 to line 28, col 44 of module DieHard: 12
+  line 38, col 22 to line 38, col 44 of module DieHard: 12
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2202:0 @!@!@
 End of statistics.
 @!@!@ENDMSG 2202 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(7) at 2014-02-14 09:00:13: 73 states generated (257647 s/min), 14 distinct states found (49411 ds/min), 2 states left on queue.
+Progress(7) at 2014-02-16 09:30:55: 73 states generated (257647 s/min), 14 distinct states found (49411 ds/min), 2 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2199:0 @!@!@
 73 states generated, 14 distinct states found, 2 states left on queue.
@@ -131,5 +131,5 @@ Progress(7) at 2014-02-14 09:00:13: 73 states generated (257647 s/min), 14 disti
 The depth of the complete state graph search is 7.
 @!@!@ENDMSG 2194 @!@!@
 @!@!@STARTMSG 2186:0 @!@!@
-Finished. (2014-02-14 09:00:13)
+Finished. (2014-02-16 09:30:55)
 @!@!@ENDMSG 2186 @!@!@

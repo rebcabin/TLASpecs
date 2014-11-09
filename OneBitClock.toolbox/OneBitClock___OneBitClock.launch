@@ -13,8 +13,8 @@
 <intAttribute key="maxHeapSize" value="25"/>
 <intAttribute key="maxSetSize" value="1000000"/>
 <booleanAttribute key="mcMode" value="true"/>
-<stringAttribute key="modelBehaviorInit" value="Init1"/>
-<stringAttribute key="modelBehaviorNext" value="Next4"/>
+<stringAttribute key="modelBehaviorInit" value="TypeOK"/>
+<stringAttribute key="modelBehaviorNext" value="Next5"/>
 <stringAttribute key="modelBehaviorSpec" value=""/>
 <intAttribute key="modelBehaviorSpecType" value="2"/>
 <stringAttribute key="modelBehaviorVars" value="b"/>

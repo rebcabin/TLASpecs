@@ -23,12 +23,12 @@
 		<link>
 			<name>Alternation.tla</name>
 			<type>1</type>
-			<location>/Users/rebcabin/Documents/TLASpecs/Alternation.tla</location>
+			<location>/Users/bbeckman/Documents/TLASpecs/Alternation.tla</location>
 		</link>
 		<link>
 			<name>Handshake.tla</name>
 			<type>1</type>
-			<location>/Users/rebcabin/Documents/TLASpecs/Handshake.tla</location>
+			<location>/Users/bbeckman/Documents/TLASpecs/Handshake.tla</location>
 		</link>
 	</linkedResources>
 </projectDescription>

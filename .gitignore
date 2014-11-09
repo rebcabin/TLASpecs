@@ -2,3 +2,7 @@
 *.aux
 *.log
 *.tex
+MC.cfg
+MC.out
+MC.tla
+MC_TE.out

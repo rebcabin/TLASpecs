@@ -2,26 +2,22 @@
 EXTENDS GCD, TLC
 
 \* CONSTANT definition @modelParameterDefinitions:0
-def_ov_1392429006393340000 ==
--1000..1000
+def_ov_139265463758028000 ==
+-100..100
+----
+\* CONSTANT definition @modelParameterDefinitions:1
+def_ov_139265463759029000 ==
+0..15
 ----
 \* Constant expression definition @modelExpressionEval
-const_expr_1392429006403341000 == 
-GCD(42*83, 42*94)
+const_expr_139265463760230000 == 
+<<GCD1, GCD2, GCD3>>
 ----
 
 \* Constant expression ASSUME statement @modelExpressionEval
-ASSUME PrintT(<<"$!@$!@$!@$!@$!",const_expr_1392429006403341000>>)
+ASSUME PrintT(<<"$!@$!@$!@$!@$!",const_expr_139265463760230000>>)
 ----
 
-\* INIT definition @modelBehaviorNoSpec:0
-init_1392429006414342000 ==
-FALSE/\x = 0
-----
-\* NEXT definition @modelBehaviorNoSpec:0
-next_1392429006425343000 ==
-FALSE/\x' = x
-----
 =============================================================================
 \* Modification History
-\* Created Fri Feb 14 17:50:06 PST 2014 by bbeckman
+\* Created Mon Feb 17 08:30:37 PST 2014 by bbeckman

@@ -938,20 +938,9 @@
 
 \begin{document}
 \tlatex
-\begin{lcom}{0}%
-\begin{cpar}{0}{F}{F}{0}{0}{}%
-This text is ignored.
-\end{cpar}%
-\end{lcom}%
 \setboolean{shading}{true}
 \@x{}\moduleLeftDash\@xx{ {\MODULE} GCD}\moduleRightDash\@xx{}%
 \@x{ {\EXTENDS} Integers}%
-\@pvspace{8.0pt}%
-\begin{lcom}{0}%
-\begin{cpar}{0}{F}{F}{0}{0}{}%
-test box comments not typesetting
-\end{cpar}%
-\end{lcom}%
 \@pvspace{8.0pt}%
 \@x{ Divides ( p ,\, n ) \.{\defeq}\@s{36.89}}%
 \begin{mcom}{245.28}%
@@ -969,7 +958,11 @@ For integers \ensuremath{p} and \ensuremath{n}, equals
  \@x{ DivisorsOf ( n ) \.{\defeq} \{ p \.{\in} Int \.{:} Divides ( p ,\, n )
  \}}%
 \@pvspace{8.0pt}%
-\@x{ SetMax ( S ) \.{\defeq}}%
+\@x{ SetMax ( S ) \.{\defeq}\@s{123.0}}%
+\@y{\@s{0}%
+ \ensuremath{{\CHOOSE}} produces elements rather than sets.
+}%
+\@xx{}%
  \@x{\@s{16.4} {\CHOOSE} i \.{\in} S \.{:} \A\, j \.{\in} S \.{:} i \.{\geq}
  j}%
 \@pvspace{8.0pt}%
@@ -983,14 +976,14 @@ For integers \ensuremath{p} and \ensuremath{n}, equals
 \ensuremath{\.{\,\backslash\,}\.{*}} Modification History
 \end{cpar}%
 \begin{cpar}{0}{F}{F}{0}{0}{}%
- \ensuremath{\.{\,\backslash\,}\.{*}} Last modified \ensuremath{Fri}
- \ensuremath{Feb} 14 15:52:41 \ensuremath{PST} 2014 by \ensuremath{bbeckman
+ \ensuremath{\.{\,\backslash\,}\.{*}} Last modified Sun \ensuremath{Feb} 16
+ 09:44:33 \ensuremath{PST} 2014 by \ensuremath{bbeckman
 }%
 \end{cpar}%
 \begin{cpar}{0}{F}{F}{0}{0}{}%
  \ensuremath{\.{\,\backslash\,}\.{*}} Created \ensuremath{Fri}
  \ensuremath{Feb} 14 11:26:38 \ensuremath{PST} 2014 by \ensuremath{bbeckman
-} This text is also ignored.
+}%
 \end{cpar}%
 \end{lcom}%
 \end{document}

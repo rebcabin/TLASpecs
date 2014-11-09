@@ -9,10 +9,10 @@ Starting SANY...
 @!@!@ENDMSG 2220 @!@!@
 Parsing file MC.tla
 Parsing file Handshake.tla
-Parsing file /Users/rebcabin/Dropbox/toolbox/plugins/org.lamport.tlatools_1.0.0.201304250137/tla2sany/StandardModules/TLC.tla
-Parsing file /Users/rebcabin/Dropbox/toolbox/plugins/org.lamport.tlatools_1.0.0.201304250137/tla2sany/StandardModules/Integers.tla
-Parsing file /Users/rebcabin/Dropbox/toolbox/plugins/org.lamport.tlatools_1.0.0.201304250137/tla2sany/StandardModules/Sequences.tla
-Parsing file /Users/rebcabin/Dropbox/toolbox/plugins/org.lamport.tlatools_1.0.0.201304250137/tla2sany/StandardModules/Naturals.tla
+Parsing file /Users/bbeckman/Documents/toolbox/plugins/org.lamport.tlatools_1.0.0.201304250137/tla2sany/StandardModules/TLC.tla
+Parsing file /Users/bbeckman/Documents/toolbox/plugins/org.lamport.tlatools_1.0.0.201304250137/tla2sany/StandardModules/Integers.tla
+Parsing file /Users/bbeckman/Documents/toolbox/plugins/org.lamport.tlatools_1.0.0.201304250137/tla2sany/StandardModules/Sequences.tla
+Parsing file /Users/bbeckman/Documents/toolbox/plugins/org.lamport.tlatools_1.0.0.201304250137/tla2sany/StandardModules/Naturals.tla
 Parsing file Alternation.tla
 Semantic processing of module Naturals
 Semantic processing of module Integers
@@ -25,7 +25,11 @@ Semantic processing of module MC
 SANY finished.
 @!@!@ENDMSG 2219 @!@!@
 @!@!@STARTMSG 2185:0 @!@!@
+<<<<<<< HEAD
 Starting... (2014-02-16 06:38:00)
+=======
+Starting... (2014-02-20 15:57:59)
+>>>>>>> 13a0adc68e1c708a36502a9b0655ab98b854234a
 @!@!@ENDMSG 2185 @!@!@
 @!@!@STARTMSG 2212:0 @!@!@
 Implied-temporal checking--satisfiability problem has 1 branches.
@@ -43,12 +47,31 @@ Checking temporal properties for the complete state space...
 Model checking completed. No error has been found.
   Estimates of the probability that TLC did not check all reachable states
   because two distinct states had the same fingerprint:
-  calculated (optimistic):  val = 4.3E-19
+  calculated (optimistic):  val = 6.5E-19
   based on the actual fingerprints:  val = 6.1E-17
 @!@!@ENDMSG 2193 @!@!@
 @!@!@STARTMSG 2201:0 @!@!@
+<<<<<<< HEAD
 The coverage statistics at 2014-02-16 06:38:01
+=======
+The coverage statistics at 2014-02-20 15:58:00
+>>>>>>> 13a0adc68e1c708a36502a9b0655ab98b854234a
 @!@!@ENDMSG 2201 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 42, col 10 to line 42, col 38 of module Handshake: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 43, col 23 to line 43, col 23 of module Handshake: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 43, col 26 to line 43, col 26 of module Handshake: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 43, col 29 to line 43, col 31 of module Handshake: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 46, col 10 to line 46, col 24 of module Handshake: 2
+@!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
   line 47, col 10 to line 47, col 38 of module Handshake: 2
 @!@!@ENDMSG 2221 @!@!@
@@ -59,56 +82,73 @@ The coverage statistics at 2014-02-16 06:38:01
   line 48, col 26 to line 48, col 26 of module Handshake: 2
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 48, col 29 to line 48, col 31 of module Handshake: 2
+  line 51, col 10 to line 51, col 21 of module Handshake: 2
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 51, col 10 to line 51, col 24 of module Handshake: 2
+  line 52, col 10 to line 52, col 38 of module Handshake: 2
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 52, col 10 to line 52, col 21 of module Handshake: 2
+  line 53, col 23 to line 53, col 23 of module Handshake: 2
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 53, col 10 to line 53, col 38 of module Handshake: 2
+  line 53, col 26 to line 53, col 28 of module Handshake: 2
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 54, col 10 to line 54, col 15 of module Handshake: 2
+  line 59, col 10 to line 59, col 38 of module Handshake: 2
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 60, col 10 to line 60, col 38 of module Handshake: 2
+  line 60, col 23 to line 60, col 23 of module Handshake: 2
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 61, col 23 to line 61, col 23 of module Handshake: 2
+  line 60, col 26 to line 60, col 26 of module Handshake: 2
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 61, col 26 to line 61, col 26 of module Handshake: 2
+  line 60, col 29 to line 60, col 31 of module Handshake: 2
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 61, col 29 to line 61, col 31 of module Handshake: 2
+  line 63, col 10 to line 63, col 24 of module Handshake: 2
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 64, col 10 to line 64, col 24 of module Handshake: 2
+  line 64, col 10 to line 64, col 38 of module Handshake: 2
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 65, col 10 to line 65, col 21 of module Handshake: 2
+  line 65, col 23 to line 65, col 23 of module Handshake: 2
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 66, col 10 to line 66, col 38 of module Handshake: 2
+  line 65, col 26 to line 65, col 26 of module Handshake: 2
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 67, col 10 to line 67, col 15 of module Handshake: 2
+  line 68, col 10 to line 68, col 21 of module Handshake: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 69, col 10 to line 69, col 38 of module Handshake: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 70, col 23 to line 70, col 23 of module Handshake: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 70, col 26 to line 70, col 28 of module Handshake: 2
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2202:0 @!@!@
 End of statistics.
 @!@!@ENDMSG 2202 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
+<<<<<<< HEAD
 Progress(8) at 2014-02-16 06:38:01: 9 states generated (6666 s/min), 8 distinct states found (5925 ds/min), 0 states left on queue.
+=======
+Progress(12) at 2014-02-20 15:58:00: 13 states generated (13000 s/min), 12 distinct states found (12000 ds/min), 0 states left on queue.
+>>>>>>> 13a0adc68e1c708a36502a9b0655ab98b854234a
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2199:0 @!@!@
-9 states generated, 8 distinct states found, 0 states left on queue.
+13 states generated, 12 distinct states found, 0 states left on queue.
 @!@!@ENDMSG 2199 @!@!@
 @!@!@STARTMSG 2194:0 @!@!@
-The depth of the complete state graph search is 8.
+The depth of the complete state graph search is 12.
 @!@!@ENDMSG 2194 @!@!@
 @!@!@STARTMSG 2186:0 @!@!@
+<<<<<<< HEAD
 Finished. (2014-02-16 06:38:01)
+=======
+Finished. (2014-02-20 15:58:00)
+>>>>>>> 13a0adc68e1c708a36502a9b0655ab98b854234a
 @!@!@ENDMSG 2186 @!@!@
