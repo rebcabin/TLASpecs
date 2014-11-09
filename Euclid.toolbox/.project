@@ -23,12 +23,12 @@
 		<link>
 			<name>Euclid.tla</name>
 			<type>1</type>
-			<location>/Users/bbeckman/Documents/TLASpecs/Euclid.tla</location>
+			<location>/Users/rebcabin/Documents/TLASpecs/Euclid.tla</location>
 		</link>
 		<link>
 			<name>GCD.tla</name>
 			<type>1</type>
-			<location>/Users/bbeckman/Documents/TLASpecs/GCD.tla</location>
+			<location>/Users/rebcabin/Documents/TLASpecs/GCD.tla</location>
 		</link>
 	</linkedResources>
 </projectDescription>
