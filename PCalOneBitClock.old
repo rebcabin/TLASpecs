@@ -18,9 +18,7 @@ vars == << b >>
 Init == (* Global variables *)
         /\ b \in {0, 1}
 
-Next == IF b = 0
-           THEN /\ b' = 1
-           ELSE /\ b' = 0
+Next == b' = (b + 1) % 2
 
 Spec == Init /\ [][Next]_vars
 

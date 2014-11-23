@@ -65,5 +65,6 @@ Termination == <>(pc = "Done")
 PartialCorrectness == (pc = "Done") => (x = y) /\ (x = GCD(x0, y0))
 =============================================================================
 \* Modification History
+\* Last modified Sun Nov 09 09:02:10 PST 2014 by rebcabin
 \* Last modified Sun Feb 16 10:12:36 PST 2014 by bbeckman
 \* Created Fri Feb 14 15:53:12 PST 2014 by bbeckman

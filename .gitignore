@@ -2,7 +2,10 @@
 *.aux
 *.log
 *.tex
-MC.cfg
-MC.out
-MC.tla
-MC_TE.out
+*.cfg
+*.out
+*.old
+*.project
+*.prefs
+*.launch
+.toolbox/

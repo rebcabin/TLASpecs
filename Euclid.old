@@ -37,7 +37,7 @@ while_step == /\ pc = "while_step"
                                THEN /\ pc' = "antanaresis_x"
                                ELSE /\ pc' = "antanaresis_y"
                     ELSE /\ Assert((x = y) /\ (x = GCD(x0, y0)), 
-                                   "Failure of assertion at line 15, column 7.")
+                                   "Failure of assertion at line 19, column 7.")
                          /\ pc' = "Done"
               /\ UNCHANGED << x, y, x0, y0 >>
 
@@ -55,8 +55,7 @@ Next == while_step \/ antanaresis_x \/ antanaresis_y
            \/ (* Disjunct to prevent deadlock on termination *)
               (pc = "Done" /\ UNCHANGED vars)
 
-Spec == /\ Init /\ [][Next]_vars
-        /\ WF_vars(Next)
+Spec == Init /\ [][Next]_vars
 
 Termination == <>(pc = "Done")
 
@@ -65,5 +64,6 @@ Termination == <>(pc = "Done")
 PartialCorrectness == (pc = "Done") => (x = y) /\ (x = GCD(x0, y0))
 =============================================================================
 \* Modification History
+\* Last modified Sun Nov 09 12:19:53 PST 2014 by rebcabin
 \* Last modified Sun Feb 16 10:12:36 PST 2014 by bbeckman
 \* Created Fri Feb 14 15:53:12 PST 2014 by bbeckman

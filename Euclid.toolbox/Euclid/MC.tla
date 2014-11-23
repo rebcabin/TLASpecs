@@ -2,27 +2,27 @@
 EXTENDS Euclid, TLC
 
 \* CONSTANT definitions @modelParameterConstants:0M
-const_139336757179929000 == 
+const_1415564166732134000 == 
 30
 ----
 
 \* CONSTANT definitions @modelParameterConstants:1N
-const_139336757181030000 == 
+const_1415564166743135000 == 
 5
 ----
 
 \* CONSTANT definition @modelParameterDefinitions:0
-def_ov_139336757182131000 ==
+def_ov_1415564166754136000 ==
 -100..100
 ----
 \* SPECIFICATION definition @modelBehaviorSpec:0
-spec_139336757183132000 ==
+spec_1415564166765137000 ==
 Spec
 ----
 \* PROPERTY definition @modelCorrectnessProperties:0
-prop_139336757184233000 ==
+prop_1415564166776138000 ==
 Termination
 ----
 =============================================================================
 \* Modification History
-\* Created Tue Feb 25 14:32:51 PST 2014 by bbeckman
+\* Created Sun Nov 09 12:16:06 PST 2014 by rebcabin

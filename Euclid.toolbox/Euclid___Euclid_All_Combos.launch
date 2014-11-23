@@ -30,7 +30,7 @@
 <stringAttribute key="modelParameterActionConstraint" value=""/>
 <listAttribute key="modelParameterConstants">
 <listEntry value="M;;30;0;0"/>
-<listEntry value="N;;100;0;0"/>
+<listEntry value="N;;18;0;0"/>
 </listAttribute>
 <stringAttribute key="modelParameterContraint" value=""/>
 <listAttribute key="modelParameterDefinitions">

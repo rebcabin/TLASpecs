@@ -23,7 +23,7 @@ Semantic processing of module MC
 SANY finished.
 @!@!@ENDMSG 2219 @!@!@
 @!@!@STARTMSG 2185:0 @!@!@
-Starting... (2014-11-08 19:46:12)
+Starting... (2014-11-10 00:27:49)
 @!@!@ENDMSG 2185 @!@!@
 @!@!@STARTMSG 2189:0 @!@!@
 Computing initial states...
@@ -39,7 +39,7 @@ Model checking completed. No error has been found.
   based on the actual fingerprints:  val = 3.7E-19
 @!@!@ENDMSG 2193 @!@!@
 @!@!@STARTMSG 2201:0 @!@!@
-The coverage statistics at 2014-11-08 19:46:12
+The coverage statistics at 2014-11-10 00:27:49
 @!@!@ENDMSG 2201 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
   line 22, col 10 to line 22, col 19 of module OneBitClock: 2
@@ -48,7 +48,7 @@ The coverage statistics at 2014-11-08 19:46:12
 End of statistics.
 @!@!@ENDMSG 2202 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(1) at 2014-11-08 19:46:12: 4 states generated (3,692 s/min), 2 distinct states found (1,846 ds/min), 0 states left on queue.
+Progress(1) at 2014-11-10 00:27:49: 4 states generated (7,272 s/min), 2 distinct states found (3,636 ds/min), 0 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2199:0 @!@!@
 4 states generated, 2 distinct states found, 0 states left on queue.
@@ -57,5 +57,5 @@ Progress(1) at 2014-11-08 19:46:12: 4 states generated (3,692 s/min), 2 distinct
 The depth of the complete state graph search is 1.
 @!@!@ENDMSG 2194 @!@!@
 @!@!@STARTMSG 2186:0 @!@!@
-Finished. (2014-11-08 19:46:12)
+Finished. (2014-11-10 00:27:49)
 @!@!@ENDMSG 2186 @!@!@

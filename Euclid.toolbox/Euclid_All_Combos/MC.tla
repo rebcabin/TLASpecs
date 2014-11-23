@@ -2,31 +2,31 @@
 EXTENDS Euclid, TLC
 
 \* CONSTANT definitions @modelParameterConstants:0M
-const_139336759307634000 == 
+const_1415564403329151000 == 
 30
 ----
 
 \* CONSTANT definitions @modelParameterConstants:1N
-const_139336759308735000 == 
-100
+const_1415564403340152000 == 
+18
 ----
 
 \* CONSTANT definition @modelParameterDefinitions:0
-def_ov_139336759309836000 ==
+def_ov_1415564403350153000 ==
 1..N
 ----
 \* SPECIFICATION definition @modelBehaviorSpec:0
-spec_139336759310837000 ==
+spec_1415564403361154000 ==
 Spec
 ----
 \* INVARIANT definition @modelCorrectnessInvariants:0
-inv_139336759311938000 ==
+inv_1415564403372155000 ==
 (pc = "Done") => (x = y) /\ (x = GCD(x0, y0))
 ----
 \* PROPERTY definition @modelCorrectnessProperties:0
-prop_139336759312939000 ==
+prop_1415564403383156000 ==
 Termination
 ----
 =============================================================================
 \* Modification History
-\* Created Tue Feb 25 14:33:13 PST 2014 by bbeckman
+\* Created Sun Nov 09 12:20:03 PST 2014 by rebcabin

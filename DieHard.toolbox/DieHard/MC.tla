@@ -2,21 +2,21 @@
 EXTENDS DieHard, TLC
 
 \* INIT definition @modelBehaviorInit:0
-init_139257185443824000 ==
+init_141560648296810000 ==
 Init
 ----
 \* NEXT definition @modelBehaviorNext:0
-next_139257185444925000 ==
+next_141560648297911000 ==
 Next
 ----
 \* INVARIANT definition @modelCorrectnessInvariants:0
-inv_139257185445926000 ==
+inv_141560648298912000 ==
 TypeOK
 ----
 \* INVARIANT definition @modelCorrectnessInvariants:1
-inv_139257185447027000 ==
+inv_141560648300013000 ==
 big /= 4
 ----
 =============================================================================
 \* Modification History
-\* Created Sun Feb 16 09:30:54 PST 2014 by bbeckman
+\* Created Mon Nov 10 00:01:23 PST 2014 by rebcabin

@@ -1,5 +1,5 @@
 @!@!@STARTMSG 2262:0 @!@!@
-TLC2 Version 2.05 of 17 April 2013
+TLC2 Version 2.05 of 23 July 2013
 @!@!@ENDMSG 2262 @!@!@
 @!@!@STARTMSG 2187:0 @!@!@
 Running in Model-Checking mode.
@@ -9,10 +9,10 @@ Starting SANY...
 @!@!@ENDMSG 2220 @!@!@
 Parsing file MC.tla
 Parsing file GCD.tla
-Parsing file /Users/bbeckman/Documents/toolbox/plugins/org.lamport.tlatools_1.0.0.201304250137/tla2sany/StandardModules/TLC.tla
-Parsing file /Users/bbeckman/Documents/toolbox/plugins/org.lamport.tlatools_1.0.0.201304250137/tla2sany/StandardModules/Integers.tla
-Parsing file /Users/bbeckman/Documents/toolbox/plugins/org.lamport.tlatools_1.0.0.201304250137/tla2sany/StandardModules/Naturals.tla
-Parsing file /Users/bbeckman/Documents/toolbox/plugins/org.lamport.tlatools_1.0.0.201304250137/tla2sany/StandardModules/Sequences.tla
+Parsing file /Users/rebcabin/Downloads/toolbox/plugins/org.lamport.tlatools_1.0.0.201403132202/tla2sany/StandardModules/TLC.tla
+Parsing file /Users/rebcabin/Downloads/toolbox/plugins/org.lamport.tlatools_1.0.0.201403132202/tla2sany/StandardModules/Integers.tla
+Parsing file /Users/rebcabin/Downloads/toolbox/plugins/org.lamport.tlatools_1.0.0.201403132202/tla2sany/StandardModules/Naturals.tla
+Parsing file /Users/rebcabin/Downloads/toolbox/plugins/org.lamport.tlatools_1.0.0.201403132202/tla2sany/StandardModules/Sequences.tla
 Semantic processing of module Naturals
 Semantic processing of module Integers
 Semantic processing of module GCD
@@ -23,7 +23,7 @@ Semantic processing of module MC
 SANY finished.
 @!@!@ENDMSG 2219 @!@!@
 @!@!@STARTMSG 2185:0 @!@!@
-Starting... (2014-02-17 08:30:38)
+Starting... (2014-11-10 00:05:29)
 @!@!@ENDMSG 2185 @!@!@
 <<"$!@$!@$!@$!@$!", <<TRUE, TRUE, TRUE>>>>
 @!@!@STARTMSG 2189:0 @!@!@
@@ -40,7 +40,7 @@ Model checking completed. No error has been found.
   based on the actual fingerprints:  val = 1.1E-19
 @!@!@ENDMSG 2193 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(0) at 2014-02-17 08:30:45: 0 states generated (0 s/min), 0 distinct states found (0 ds/min), 0 states left on queue.
+Progress(0) at 2014-11-10 00:05:38: 0 states generated (0 s/min), 0 distinct states found (0 ds/min), 0 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2199:0 @!@!@
 0 states generated, 0 distinct states found, 0 states left on queue.
@@ -49,5 +49,5 @@ Progress(0) at 2014-02-17 08:30:45: 0 states generated (0 s/min), 0 distinct sta
 The depth of the complete state graph search is 0.
 @!@!@ENDMSG 2194 @!@!@
 @!@!@STARTMSG 2186:0 @!@!@
-Finished. (2014-02-17 08:30:45)
+Finished. (2014-11-10 00:05:38)
 @!@!@ENDMSG 2186 @!@!@

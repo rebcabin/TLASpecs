@@ -1,5 +1,5 @@
 @!@!@STARTMSG 2262:0 @!@!@
-TLC2 Version 2.05 of 17 April 2013
+TLC2 Version 2.05 of 23 July 2013
 @!@!@ENDMSG 2262 @!@!@
 @!@!@STARTMSG 2187:0 @!@!@
 Running in Model-Checking mode.
@@ -9,10 +9,10 @@ Starting SANY...
 @!@!@ENDMSG 2220 @!@!@
 Parsing file MC.tla
 Parsing file DieHard.tla
-Parsing file /Users/bbeckman/Documents/toolbox/plugins/org.lamport.tlatools_1.0.0.201304250137/tla2sany/StandardModules/TLC.tla
-Parsing file /Users/bbeckman/Documents/toolbox/plugins/org.lamport.tlatools_1.0.0.201304250137/tla2sany/StandardModules/Integers.tla
-Parsing file /Users/bbeckman/Documents/toolbox/plugins/org.lamport.tlatools_1.0.0.201304250137/tla2sany/StandardModules/Naturals.tla
-Parsing file /Users/bbeckman/Documents/toolbox/plugins/org.lamport.tlatools_1.0.0.201304250137/tla2sany/StandardModules/Sequences.tla
+Parsing file /Users/rebcabin/Downloads/toolbox/plugins/org.lamport.tlatools_1.0.0.201403132202/tla2sany/StandardModules/TLC.tla
+Parsing file /Users/rebcabin/Downloads/toolbox/plugins/org.lamport.tlatools_1.0.0.201403132202/tla2sany/StandardModules/Integers.tla
+Parsing file /Users/rebcabin/Downloads/toolbox/plugins/org.lamport.tlatools_1.0.0.201403132202/tla2sany/StandardModules/Naturals.tla
+Parsing file /Users/rebcabin/Downloads/toolbox/plugins/org.lamport.tlatools_1.0.0.201403132202/tla2sany/StandardModules/Sequences.tla
 Semantic processing of module Naturals
 Semantic processing of module Integers
 Semantic processing of module DieHard
@@ -23,7 +23,7 @@ Semantic processing of module MC
 SANY finished.
 @!@!@ENDMSG 2219 @!@!@
 @!@!@STARTMSG 2185:0 @!@!@
-Starting... (2014-02-16 09:30:54)
+Starting... (2014-11-10 00:01:23)
 @!@!@ENDMSG 2185 @!@!@
 @!@!@STARTMSG 2189:0 @!@!@
 Computing initial states...
@@ -32,7 +32,7 @@ Computing initial states...
 Finished computing initial states: 1 distinct state generated.
 @!@!@ENDMSG 2190 @!@!@
 @!@!@STARTMSG 2110:1 @!@!@
-Invariant inv_139257185447027000 is violated.
+Invariant inv_141560648300013000 is violated.
 @!@!@ENDMSG 2110 @!@!@
 @!@!@STARTMSG 2121:1 @!@!@
 The behavior up to this point is:
@@ -50,7 +50,7 @@ The behavior up to this point is:
 
 @!@!@ENDMSG 2217 @!@!@
 @!@!@STARTMSG 2217:4 @!@!@
-3: <Action line 37, col 19 to line 38, col 44 of module DieHard>
+3: <Action line 38, col 19 to line 39, col 44 of module DieHard>
 /\ big = 2
 /\ small = 3
 
@@ -62,7 +62,7 @@ The behavior up to this point is:
 
 @!@!@ENDMSG 2217 @!@!@
 @!@!@STARTMSG 2217:4 @!@!@
-5: <Action line 37, col 19 to line 38, col 44 of module DieHard>
+5: <Action line 38, col 19 to line 39, col 44 of module DieHard>
 /\ big = 0
 /\ small = 2
 
@@ -74,13 +74,13 @@ The behavior up to this point is:
 
 @!@!@ENDMSG 2217 @!@!@
 @!@!@STARTMSG 2217:4 @!@!@
-7: <Action line 37, col 19 to line 38, col 44 of module DieHard>
+7: <Action line 38, col 19 to line 39, col 44 of module DieHard>
 /\ big = 4
 /\ small = 3
 
 @!@!@ENDMSG 2217 @!@!@
 @!@!@STARTMSG 2201:0 @!@!@
-The coverage statistics at 2014-02-16 09:30:55
+The coverage statistics at 2014-11-10 00:01:23
 @!@!@ENDMSG 2201 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
   line 11, col 17 to line 11, col 26 of module DieHard: 12
@@ -107,22 +107,22 @@ The coverage statistics at 2014-02-16 09:30:55
   line 18, col 29 to line 18, col 42 of module DieHard: 12
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 33, col 22 to line 33, col 44 of module DieHard: 12
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
   line 34, col 22 to line 34, col 44 of module DieHard: 12
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 37, col 22 to line 37, col 44 of module DieHard: 12
+  line 35, col 22 to line 35, col 44 of module DieHard: 12
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
   line 38, col 22 to line 38, col 44 of module DieHard: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 39, col 22 to line 39, col 44 of module DieHard: 12
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2202:0 @!@!@
 End of statistics.
 @!@!@ENDMSG 2202 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(7) at 2014-02-16 09:30:55: 73 states generated (257647 s/min), 14 distinct states found (49411 ds/min), 2 states left on queue.
+Progress(7) at 2014-11-10 00:01:23: 73 states generated (230,526 s/min), 14 distinct states found (44,210 ds/min), 2 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2199:0 @!@!@
 73 states generated, 14 distinct states found, 2 states left on queue.
@@ -131,5 +131,5 @@ Progress(7) at 2014-02-16 09:30:55: 73 states generated (257647 s/min), 14 disti
 The depth of the complete state graph search is 7.
 @!@!@ENDMSG 2194 @!@!@
 @!@!@STARTMSG 2186:0 @!@!@
-Finished. (2014-02-16 09:30:55)
+Finished. (2014-11-10 00:01:23)
 @!@!@ENDMSG 2186 @!@!@

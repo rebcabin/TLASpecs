@@ -1,5 +1,5 @@
 @!@!@STARTMSG 2262:0 @!@!@
-TLC2 Version 2.05 of 17 April 2013
+TLC2 Version 2.05 of 23 July 2013
 @!@!@ENDMSG 2262 @!@!@
 @!@!@STARTMSG 2187:0 @!@!@
 Running in Model-Checking mode.
@@ -9,10 +9,10 @@ Starting SANY...
 @!@!@ENDMSG 2220 @!@!@
 Parsing file MC.tla
 Parsing file PDieHard.tla
-Parsing file /Users/bbeckman/Documents/toolbox/plugins/org.lamport.tlatools_1.0.0.201304250137/tla2sany/StandardModules/TLC.tla
-Parsing file /Users/bbeckman/Documents/toolbox/plugins/org.lamport.tlatools_1.0.0.201304250137/tla2sany/StandardModules/Integers.tla
-Parsing file /Users/bbeckman/Documents/toolbox/plugins/org.lamport.tlatools_1.0.0.201304250137/tla2sany/StandardModules/Naturals.tla
-Parsing file /Users/bbeckman/Documents/toolbox/plugins/org.lamport.tlatools_1.0.0.201304250137/tla2sany/StandardModules/Sequences.tla
+Parsing file /Users/rebcabin/Downloads/toolbox/plugins/org.lamport.tlatools_1.0.0.201403132202/tla2sany/StandardModules/TLC.tla
+Parsing file /Users/rebcabin/Downloads/toolbox/plugins/org.lamport.tlatools_1.0.0.201403132202/tla2sany/StandardModules/Integers.tla
+Parsing file /Users/rebcabin/Downloads/toolbox/plugins/org.lamport.tlatools_1.0.0.201403132202/tla2sany/StandardModules/Naturals.tla
+Parsing file /Users/rebcabin/Downloads/toolbox/plugins/org.lamport.tlatools_1.0.0.201403132202/tla2sany/StandardModules/Sequences.tla
 Semantic processing of module Naturals
 Semantic processing of module Integers
 Semantic processing of module PDieHard
@@ -23,7 +23,7 @@ Semantic processing of module MC
 SANY finished.
 @!@!@ENDMSG 2219 @!@!@
 @!@!@STARTMSG 2185:0 @!@!@
-Starting... (2014-02-16 09:39:42)
+Starting... (2014-11-10 00:02:28)
 @!@!@ENDMSG 2185 @!@!@
 @!@!@STARTMSG 2189:0 @!@!@
 Computing initial states...
@@ -32,7 +32,7 @@ Computing initial states...
 Finished computing initial states: 1 distinct state generated.
 @!@!@ENDMSG 2190 @!@!@
 @!@!@STARTMSG 2110:1 @!@!@
-Invariant inv_139257238161532000 is violated.
+Invariant inv_141560654782615000 is violated.
 @!@!@ENDMSG 2110 @!@!@
 @!@!@STARTMSG 2121:1 @!@!@
 The behavior up to this point is:
@@ -80,7 +80,7 @@ The behavior up to this point is:
 
 @!@!@ENDMSG 2217 @!@!@
 @!@!@STARTMSG 2201:0 @!@!@
-The coverage statistics at 2014-02-16 09:39:42
+The coverage statistics at 2014-11-10 00:02:28
 @!@!@ENDMSG 2201 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
   line 44, col 15 to line 44, col 22 of module PDieHard: 16
@@ -107,10 +107,10 @@ The coverage statistics at 2014-02-16 09:39:42
   line 51, col 15 to line 51, col 24 of module PDieHard: 16
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 53, col 20 to line 53, col 38 of module PDieHard: 15
+  line 53, col 20 to line 53, col 38 of module PDieHard: 16
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 54, col 20 to line 54, col 42 of module PDieHard: 15
+  line 54, col 20 to line 54, col 42 of module PDieHard: 16
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
   line 56, col 20 to line 56, col 38 of module PDieHard: 15
@@ -122,14 +122,14 @@ The coverage statistics at 2014-02-16 09:39:42
 End of statistics.
 @!@!@ENDMSG 2202 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(8) at 2014-02-16 09:39:42: 95 states generated (438461 s/min), 16 distinct states found (73846 ds/min), 0 states left on queue.
+Progress(9) at 2014-11-10 00:02:28: 96 states generated (130,909 s/min), 16 distinct states found (21,818 ds/min), 0 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2199:0 @!@!@
-95 states generated, 16 distinct states found, 0 states left on queue.
+96 states generated, 16 distinct states found, 0 states left on queue.
 @!@!@ENDMSG 2199 @!@!@
 @!@!@STARTMSG 2194:0 @!@!@
-The depth of the complete state graph search is 8.
+The depth of the complete state graph search is 9.
 @!@!@ENDMSG 2194 @!@!@
 @!@!@STARTMSG 2186:0 @!@!@
-Finished. (2014-02-16 09:39:42)
+Finished. (2014-11-10 00:02:28)
 @!@!@ENDMSG 2186 @!@!@
