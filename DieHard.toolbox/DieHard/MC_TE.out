@@ -1,5 +1,5 @@
 @!@!@STARTMSG 2262:0 @!@!@
-TLC2 Version 2.05 of 17 April 2013
+TLC2 Version 2.07 of 1 June 2015
 @!@!@ENDMSG 2262 @!@!@
 @!@!@STARTMSG 2187:0 @!@!@
 Running in Model-Checking mode.
@@ -9,10 +9,10 @@ Starting SANY...
 @!@!@ENDMSG 2220 @!@!@
 Parsing file MC.tla
 Parsing file DieHard.tla
-Parsing file /Users/bbeckman/Documents/toolbox/plugins/org.lamport.tlatools_1.0.0.201304250137/tla2sany/StandardModules/TLC.tla
-Parsing file /Users/bbeckman/Documents/toolbox/plugins/org.lamport.tlatools_1.0.0.201304250137/tla2sany/StandardModules/Integers.tla
-Parsing file /Users/bbeckman/Documents/toolbox/plugins/org.lamport.tlatools_1.0.0.201304250137/tla2sany/StandardModules/Naturals.tla
-Parsing file /Users/bbeckman/Documents/toolbox/plugins/org.lamport.tlatools_1.0.0.201304250137/tla2sany/StandardModules/Sequences.tla
+Parsing file /Library/Java/Extensions/tla/tla2sany/StandardModules/TLC.tla
+Parsing file /Library/Java/Extensions/tla/tla2sany/StandardModules/Integers.tla
+Parsing file /Library/Java/Extensions/tla/tla2sany/StandardModules/Naturals.tla
+Parsing file /Library/Java/Extensions/tla/tla2sany/StandardModules/Sequences.tla
 Semantic processing of module Naturals
 Semantic processing of module Integers
 Semantic processing of module DieHard
@@ -23,7 +23,7 @@ Semantic processing of module MC
 SANY finished.
 @!@!@ENDMSG 2219 @!@!@
 @!@!@STARTMSG 2185:0 @!@!@
-Starting... (2014-02-14 09:00:12)
+Starting... (2015-10-29 14:15:20)
 @!@!@ENDMSG 2185 @!@!@
 @!@!@STARTMSG 2189:0 @!@!@
 Computing initial states...
@@ -32,7 +32,7 @@ Computing initial states...
 Finished computing initial states: 1 distinct state generated.
 @!@!@ENDMSG 2190 @!@!@
 @!@!@STARTMSG 2110:1 @!@!@
-Invariant inv_139239721253065000 is violated.
+Invariant inv_144615332018625000 is violated.
 @!@!@ENDMSG 2110 @!@!@
 @!@!@STARTMSG 2121:1 @!@!@
 The behavior up to this point is:
@@ -80,7 +80,7 @@ The behavior up to this point is:
 
 @!@!@ENDMSG 2217 @!@!@
 @!@!@STARTMSG 2201:0 @!@!@
-The coverage statistics at 2014-02-14 09:00:13
+The coverage statistics at 2015-10-29 14:15:20
 @!@!@ENDMSG 2201 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
   line 11, col 17 to line 11, col 26 of module DieHard: 12
@@ -122,7 +122,7 @@ The coverage statistics at 2014-02-14 09:00:13
 End of statistics.
 @!@!@ENDMSG 2202 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(7) at 2014-02-14 09:00:13: 73 states generated (257647 s/min), 14 distinct states found (49411 ds/min), 2 states left on queue.
+Progress(7) at 2015-10-29 14:15:20: 73 states generated (365,000 s/min), 14 distinct states found (70,000 ds/min), 2 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2199:0 @!@!@
 73 states generated, 14 distinct states found, 2 states left on queue.
@@ -131,5 +131,5 @@ Progress(7) at 2014-02-14 09:00:13: 73 states generated (257647 s/min), 14 disti
 The depth of the complete state graph search is 7.
 @!@!@ENDMSG 2194 @!@!@
 @!@!@STARTMSG 2186:0 @!@!@
-Finished. (2014-02-14 09:00:13)
+Finished. (2015-10-29 14:15:20)
 @!@!@ENDMSG 2186 @!@!@

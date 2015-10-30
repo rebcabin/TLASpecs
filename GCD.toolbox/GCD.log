@@ -1,18 +1,15 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/MacPorts 2012_5) (format=pdflatex 2013.2.24)  14 FEB 2014 16:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  23 OCT 2015 11:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **GCD.tex
 (./GCD.tex
-LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, cz
-ech, slovak, dutch, ukenglish, usenglishmax, basque, french, german-x-2012-05-3
-0, ngerman-x-2012-05-30, german, ngerman, swissgerman, italian, polish, portugu
-ese, spanish, catalan, galician, loaded.
+LaTeX2e <2014/05/01>
+Babel <3.9k> and hyphenation patterns for 78 languages loaded.
 
-(/opt/local/share/texmf-texlive-dist/tex/latex/base/article.cls
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/opt/local/share/texmf-texlive-dist/tex/latex/base/size10.clo
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -26,26 +23,26 @@ File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-) (/opt/local/share/texmf-texlive-dist/tex/latex/graphics/color.sty
-Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
-(/opt/local/share/texmf-texlive-dist/tex/latex/latexconfig/color.cfg
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2014/04/23 v1.1a Standard LaTeX Color (DPC)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package color Info: Driver file: pdftex.def on input line 130.
-(/opt/local/share/texmf-texlive-dist/tex/latex/pdftex-def/pdftex.def
+Package color Info: Driver file: pdftex.def on input line 137.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-(/opt/local/share/texmf-texlive-dist/tex/generic/oberdiek/infwarerr.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-) (/opt/local/share/texmf-texlive-dist/tex/generic/oberdiek/ltxcmds.sty
+) (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count87
-)) (/opt/local/share/texmf-texlive-dist/tex/latex/base/latexsym.sty
+)) (/usr/local/texlive/2014/texmf-dist/tex/latex/base/latexsym.sty
 Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
 \symlasy=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 (Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
-) (/opt/local/share/texmf-texlive-dist/tex/latex/base/ifthen.sty
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \symlength=\skip43
@@ -75,7 +72,7 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 \alignbox=\box28
 \symtlaitalics=\mathgroup5
 \c@tlx@ctr=\count89
-(/opt/local/share/texmf-texlive-dist/tex/latex/tools/verbatim.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks14
 \verbatim@line=\toks15
@@ -95,7 +92,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 939.
 LaTeX Font Info:    ... okay on input line 939.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 939.
 LaTeX Font Info:    ... okay on input line 939.
-(/opt/local/share/texmf-texlive-dist/tex/context/base/supp-pdf.mkii
+(/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count90
 \scratchdimen=\dimen103
@@ -114,7 +111,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 947.
 LaTeX Font Info:    Try loading font information for U+lasy on input line 947.
-(/opt/local/share/texmf-texlive-dist/tex/latex/base/ulasy.fd
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -128,26 +125,26 @@ Overfull \hbox (3.31638pt too wide) in paragraph at lines 956--964
 
 [1
 
-{/opt/local/var/db/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./GCD.aux) ) 
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./GCD.
+aux) ) 
 Here is how much of TeX's memory you used:
- 1286 strings out of 494763
- 15796 string characters out of 3171442
- 71066 words of memory out of 3000000
- 4548 multiletter control sequences out of 15000+200000
- 8806 words of font info for 34 fonts, out of 3000000 for 9000
- 134 hyphenation exceptions out of 8191
- 23i,10n,25p,228b,304s stack positions out of 5000i,500n,10000p,200000b,50000s
-</op
-t/local/share/texmf-texlive-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></o
-pt/local/share/texmf-texlive-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></o
-pt/local/share/texmf-texlive-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></op
-t/local/share/texmf-texlive-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></opt/
-local/share/texmf-texlive-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></opt/lo
-cal/share/texmf-texlive-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/lo
-cal/share/texmf-texlive-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></opt/loc
-al/share/texmf-texlive-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></opt/loc
-al/share/texmf-texlive-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on GCD.pdf (1 page, 91762 bytes).
+ 1285 strings out of 493117
+ 15748 string characters out of 6135433
+ 76586 words of memory out of 5000000
+ 4782 multiletter control sequences out of 15000+600000
+ 8806 words of font info for 34 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 23i,10n,25p,228b,304s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc1
+0.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10
+.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.p
+fb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb>
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></u
+sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
+r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/
+local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/l
+ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
+Output written on GCD.pdf (1 page, 91687 bytes).
 PDF statistics:
  44 PDF objects out of 1000 (max. 8388607)
  31 compressed objects within 1 object stream

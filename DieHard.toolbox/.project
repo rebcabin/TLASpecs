@@ -23,7 +23,7 @@
 		<link>
 			<name>DieHard.tla</name>
 			<type>1</type>
-			<location>/Users/bbeckman/Documents/TLASpecs/DieHard.tla</location>
+			<locationURI>PARENT-1-PROJECT_LOC/DieHard.tla</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>
